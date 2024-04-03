@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ESignLocalePolicy'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ESignLocalePolicy'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.ESignTabs = factory(root.Docusign.ApiClient, root.Docusign.ESignLocalePolicy);
+    root.Docusign.ESignTabs = factory(root.Docusign.ApiClient);
   }
-}(this, function(ApiClient, ESignLocalePolicy) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -80,7 +80,7 @@
         obj['italic'] = ApiClient.convertToType(data['italic'], 'String');
       }
       if (data.hasOwnProperty('localePolicy')) {
-        obj['localePolicy'] = ESignLocalePolicy.constructFromObject(data['localePolicy']);
+        obj['localePolicy'] = ApiClient.convertToType(data['localePolicy'], {'String': Object});
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -170,7 +170,7 @@
    */
   exports.prototype['italic'] = undefined;
   /**
-   * @member {module:model/ESignLocalePolicy} localePolicy
+   * @member {Object.<String, Object>} localePolicy
    */
   exports.prototype['localePolicy'] = undefined;
   /**
@@ -226,7 +226,7 @@
    */
   exports.prototype['underline'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} value
    */
   exports.prototype['value'] = undefined;

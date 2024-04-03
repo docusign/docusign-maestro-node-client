@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountId', 'model/AowUUID', 'model/DsStepId', 'model/UserId', 'model/WorkflowDateTime', 'model/WorkflowStepError', 'model/WorkflowStepHistoryState'], factory);
+    define(['ApiClient', 'model/WorkflowStepError', 'model/WorkflowStepHistoryState'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AccountId'), require('./AowUUID'), require('./DsStepId'), require('./UserId'), require('./WorkflowDateTime'), require('./WorkflowStepError'), require('./WorkflowStepHistoryState'));
+    module.exports = factory(require('../ApiClient'), require('./WorkflowStepError'), require('./WorkflowStepHistoryState'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowStepHistory = factory(root.Docusign.ApiClient, root.Docusign.AccountId, root.Docusign.AowUUID, root.Docusign.DsStepId, root.Docusign.UserId, root.Docusign.WorkflowDateTime, root.Docusign.WorkflowStepError, root.Docusign.WorkflowStepHistoryState);
+    root.Docusign.WorkflowStepHistory = factory(root.Docusign.ApiClient, root.Docusign.WorkflowStepError, root.Docusign.WorkflowStepHistoryState);
   }
-}(this, function(ApiClient, AccountId, AowUUID, DsStepId, UserId, WorkflowDateTime, WorkflowStepError, WorkflowStepHistoryState) {
+}(this, function(ApiClient, WorkflowStepError, WorkflowStepHistoryState) {
   'use strict';
 
 
@@ -40,7 +40,7 @@
    * @param dacId {String} 
    * @param stepName {String} Name of the workflow step (DS Scope)
    * @param stepState {module:model/WorkflowStepHistoryState} 
-   * @param userId {module:model/UserId} 
+   * @param userId {String} 
    */
   var exports = function(dacId, stepName, stepState, userId) {
     var _this = this;
@@ -60,16 +60,16 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('accountId')) {
-        obj['accountId'] = AccountId.constructFromObject(data['accountId']);
+        obj['accountId'] = ApiClient.convertToType(data['accountId'], 'String');
       }
       if (data.hasOwnProperty('dacId')) {
         obj['dacId'] = ApiClient.convertToType(data['dacId'], 'String');
       }
       if (data.hasOwnProperty('dsStepId')) {
-        obj['dsStepId'] = DsStepId.constructFromObject(data['dsStepId']);
+        obj['dsStepId'] = ApiClient.convertToType(data['dsStepId'], 'String');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = WorkflowDateTime.constructFromObject(data['endDate']);
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'String');
       }
       if (data.hasOwnProperty('error')) {
         obj['error'] = WorkflowStepError.constructFromObject(data['error']);
@@ -78,10 +78,10 @@
         obj['outputModuleProperties'] = ApiClient.convertToType(data['outputModuleProperties'], Object);
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = WorkflowDateTime.constructFromObject(data['startDate']);
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'String');
       }
       if (data.hasOwnProperty('stepId')) {
-        obj['stepId'] = AowUUID.constructFromObject(data['stepId']);
+        obj['stepId'] = ApiClient.convertToType(data['stepId'], 'String');
       }
       if (data.hasOwnProperty('stepName')) {
         obj['stepName'] = ApiClient.convertToType(data['stepName'], 'String');
@@ -90,14 +90,14 @@
         obj['stepState'] = WorkflowStepHistoryState.constructFromObject(data['stepState']);
       }
       if (data.hasOwnProperty('userId')) {
-        obj['userId'] = UserId.constructFromObject(data['userId']);
+        obj['userId'] = ApiClient.convertToType(data['userId'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * @member {module:model/AccountId} accountId
+   * @member {String} accountId
    */
   exports.prototype['accountId'] = undefined;
   /**
@@ -105,12 +105,12 @@
    */
   exports.prototype['dacId'] = undefined;
   /**
-   * @member {module:model/DsStepId} dsStepId
+   * @member {String} dsStepId
    */
   exports.prototype['dsStepId'] = undefined;
   /**
    * Track the End time of the Workflow Step
-   * @member {module:model/WorkflowDateTime} endDate
+   * @member {String} endDate
    */
   exports.prototype['endDate'] = undefined;
   /**
@@ -123,12 +123,12 @@
   exports.prototype['outputModuleProperties'] = undefined;
   /**
    * Track the Start time of the Workflow Step
-   * @member {module:model/WorkflowDateTime} startDate
+   * @member {String} startDate
    */
   exports.prototype['startDate'] = undefined;
   /**
    * The Step Id of the workflow step in the workflow instance
-   * @member {module:model/AowUUID} stepId
+   * @member {String} stepId
    */
   exports.prototype['stepId'] = undefined;
   /**
@@ -141,7 +141,7 @@
    */
   exports.prototype['stepState'] = undefined;
   /**
-   * @member {module:model/UserId} userId
+   * @member {String} userId
    */
   exports.prototype['userId'] = undefined;
 

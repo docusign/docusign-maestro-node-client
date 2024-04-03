@@ -36,7 +36,7 @@
    * Constructs a new <code>DSDoUntilStep</code>.
    * @alias module:model/DSDoUntilStep
    * @class
-   * @param doSteps {Array.<Object>} A list of DS Workflow Steps. Each element in the list should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
+   * @param doSteps {Array.<Object>} A list of #/definitions/DSWorkflowStep. Each element is: A DS Workflow Step. This object should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
    * @param expression {module:model/DSWorkflowComparisonExpression} 
    * @param id {String} 
    * @param name {String} 
@@ -79,7 +79,7 @@
   }
 
   /**
-   * A list of DS Workflow Steps. Each element in the list should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
+   * A list of #/definitions/DSWorkflowStep. Each element is: A DS Workflow Step. This object should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
    * @member {Array.<Object>} doSteps
    */
   exports.prototype['doSteps'] = undefined;

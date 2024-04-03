@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowStepTypesDSTransformation', 'model/RecordStringOrVariableOrTransformation', 'model/RecordToNever'], factory);
+    define(['ApiClient', 'model/DSWorkflowStepTypesDSTransformation', 'model/RecordToNever'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowStepTypesDSTransformation'), require('./RecordStringOrVariableOrTransformation'), require('./RecordToNever'));
+    module.exports = factory(require('../ApiClient'), require('./DSWorkflowStepTypesDSTransformation'), require('./RecordToNever'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSTransformationStep = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowStepTypesDSTransformation, root.Docusign.RecordStringOrVariableOrTransformation, root.Docusign.RecordToNever);
+    root.Docusign.DSTransformationStep = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowStepTypesDSTransformation, root.Docusign.RecordToNever);
   }
-}(this, function(ApiClient, DSWorkflowStepTypesDSTransformation, RecordStringOrVariableOrTransformation, RecordToNever) {
+}(this, function(ApiClient, DSWorkflowStepTypesDSTransformation, RecordToNever) {
   'use strict';
 
 
@@ -37,11 +37,11 @@
    * @alias module:model/DSTransformationStep
    * @class
    * @param config {module:model/RecordToNever} 
-   * @param expression {Object} DS Workflow Transformation Expression object. This object should be any of the following object models: [#/definitions/DSWorkflowReplaceExpression, #/definitions/DSWorkflowToLowerExpression, #/definitions/DSWorkflowToUpperExpression, #/components/schemas/DSWorkflowLastIndexOfExpression, #/components/schemas/DSWorkflowIndexOfExpression, #/components/schemas/DSWorkflowSubstringExpression, #/components/schemas/DSWorkflowConcatExpression]
+   * @param expression {Object} Reference of #/definitions/DSWorkflowTransformationExpression. Transformation Expression object. This object should be any of the following object models: [#/definitions/DSWorkflowReplaceExpression, #/definitions/DSWorkflowToLowerExpression, #/definitions/DSWorkflowToUpperExpression, #/components/schemas/DSWorkflowLastIndexOfExpression, #/components/schemas/DSWorkflowIndexOfExpression, #/components/schemas/DSWorkflowSubstringExpression, #/components/schemas/DSWorkflowConcatExpression]
    * @param id {String} 
-   * @param input {module:model/RecordStringOrVariableOrTransformation} 
+   * @param input {Object.<String, Object>} A Record of strings to Strings, Variables, or Transformation Expressions
    * @param name {String} 
-   * @param output {module:model/RecordStringOrVariableOrTransformation} 
+   * @param output {Object.<String, Object>} A Record of strings to Strings, Variables, or Transformation Expressions
    * @param type {module:model/DSWorkflowStepTypesDSTransformation} 
    */
   var exports = function(config, expression, id, input, name, output, type) {
@@ -71,13 +71,13 @@
         obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('input')) {
-        obj['input'] = RecordStringOrVariableOrTransformation.constructFromObject(data['input']);
+        obj['input'] = ApiClient.convertToType(data['input'], {'String': Object});
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('output')) {
-        obj['output'] = RecordStringOrVariableOrTransformation.constructFromObject(data['output']);
+        obj['output'] = ApiClient.convertToType(data['output'], {'String': Object});
       }
       if (data.hasOwnProperty('type')) {
         obj['type'] = DSWorkflowStepTypesDSTransformation.constructFromObject(data['type']);
@@ -91,7 +91,7 @@
    */
   exports.prototype['config'] = undefined;
   /**
-   * DS Workflow Transformation Expression object. This object should be any of the following object models: [#/definitions/DSWorkflowReplaceExpression, #/definitions/DSWorkflowToLowerExpression, #/definitions/DSWorkflowToUpperExpression, #/components/schemas/DSWorkflowLastIndexOfExpression, #/components/schemas/DSWorkflowIndexOfExpression, #/components/schemas/DSWorkflowSubstringExpression, #/components/schemas/DSWorkflowConcatExpression]
+   * Reference of #/definitions/DSWorkflowTransformationExpression. Transformation Expression object. This object should be any of the following object models: [#/definitions/DSWorkflowReplaceExpression, #/definitions/DSWorkflowToLowerExpression, #/definitions/DSWorkflowToUpperExpression, #/components/schemas/DSWorkflowLastIndexOfExpression, #/components/schemas/DSWorkflowIndexOfExpression, #/components/schemas/DSWorkflowSubstringExpression, #/components/schemas/DSWorkflowConcatExpression]
    * @member {Object} expression
    */
   exports.prototype['expression'] = undefined;
@@ -100,7 +100,8 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {module:model/RecordStringOrVariableOrTransformation} input
+   * A Record of strings to Strings, Variables, or Transformation Expressions
+   * @member {Object.<String, Object>} input
    */
   exports.prototype['input'] = undefined;
   /**
@@ -108,7 +109,8 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {module:model/RecordStringOrVariableOrTransformation} output
+   * A Record of strings to Strings, Variables, or Transformation Expressions
+   * @member {Object.<String, Object>} output
    */
   exports.prototype['output'] = undefined;
   /**

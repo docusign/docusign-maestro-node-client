@@ -66,7 +66,7 @@
   }
 
   /**
-   * A list of StringOrVariableOrTransformation. Each element in the list should be any of the following object models: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * A list of #/definitions/StringOrVariableOrTransformation. Each element is: Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Array.<Object>} inputs
    */
   exports.prototype['inputs'] = undefined;

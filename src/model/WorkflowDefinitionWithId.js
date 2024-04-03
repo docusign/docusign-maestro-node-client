@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AowUUID', 'model/LastDeployedId', 'model/ValidationErrors', 'model/WorkflowDefinition', 'model/WorkflowMetadataStatus'], factory);
+    define(['ApiClient', 'model/ValidationErrors', 'model/WorkflowDefinition', 'model/WorkflowMetadataStatus'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AowUUID'), require('./LastDeployedId'), require('./ValidationErrors'), require('./WorkflowDefinition'), require('./WorkflowMetadataStatus'));
+    module.exports = factory(require('../ApiClient'), require('./ValidationErrors'), require('./WorkflowDefinition'), require('./WorkflowMetadataStatus'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowDefinitionWithId = factory(root.Docusign.ApiClient, root.Docusign.AowUUID, root.Docusign.LastDeployedId, root.Docusign.ValidationErrors, root.Docusign.WorkflowDefinition, root.Docusign.WorkflowMetadataStatus);
+    root.Docusign.WorkflowDefinitionWithId = factory(root.Docusign.ApiClient, root.Docusign.ValidationErrors, root.Docusign.WorkflowDefinition, root.Docusign.WorkflowMetadataStatus);
   }
-}(this, function(ApiClient, AowUUID, LastDeployedId, ValidationErrors, WorkflowDefinition, WorkflowMetadataStatus) {
+}(this, function(ApiClient, ValidationErrors, WorkflowDefinition, WorkflowMetadataStatus) {
   'use strict';
 
 
@@ -37,7 +37,7 @@
    * A DS workflow definition with metadata.
    * @alias module:model/WorkflowDefinitionWithId
    * @class
-   * @param id {module:model/AowUUID} 
+   * @param id {String} 
    */
   var exports = function(id) {
     var _this = this;
@@ -63,13 +63,13 @@
         obj['createdDate'] = ApiClient.convertToType(data['createdDate'], 'Date');
       }
       if (data.hasOwnProperty('id')) {
-        obj['id'] = AowUUID.constructFromObject(data['id']);
+        obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('isDraft')) {
         obj['isDraft'] = ApiClient.convertToType(data['isDraft'], 'Boolean');
       }
       if (data.hasOwnProperty('lastDeployedId')) {
-        obj['lastDeployedId'] = LastDeployedId.constructFromObject(data['lastDeployedId']);
+        obj['lastDeployedId'] = ApiClient.convertToType(data['lastDeployedId'], 'String');
       }
       if (data.hasOwnProperty('lastDeployedVersion')) {
         obj['lastDeployedVersion'] = ApiClient.convertToType(data['lastDeployedVersion'], 'String');
@@ -106,7 +106,7 @@
    */
   exports.prototype['createdDate'] = undefined;
   /**
-   * @member {module:model/AowUUID} id
+   * @member {String} id
    */
   exports.prototype['id'] = undefined;
   /**
@@ -114,7 +114,7 @@
    */
   exports.prototype['isDraft'] = undefined;
   /**
-   * @member {module:model/LastDeployedId} lastDeployedId
+   * @member {String} lastDeployedId
    */
   exports.prototype['lastDeployedId'] = undefined;
   /**

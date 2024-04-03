@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountId', 'model/ProgressInstance', 'model/StartedByInstance', 'model/TemplateId', 'model/WorkflowCreatorId', 'model/WorkflowDateTime', 'model/WorkflowInstanceMap', 'model/WorkflowInstanceState'], factory);
+    define(['ApiClient', 'model/ProgressInstance', 'model/StartedByInstance', 'model/WorkflowInstanceState'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AccountId'), require('./ProgressInstance'), require('./StartedByInstance'), require('./TemplateId'), require('./WorkflowCreatorId'), require('./WorkflowDateTime'), require('./WorkflowInstanceMap'), require('./WorkflowInstanceState'));
+    module.exports = factory(require('../ApiClient'), require('./ProgressInstance'), require('./StartedByInstance'), require('./WorkflowInstanceState'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowInstance = factory(root.Docusign.ApiClient, root.Docusign.AccountId, root.Docusign.ProgressInstance, root.Docusign.StartedByInstance, root.Docusign.TemplateId, root.Docusign.WorkflowCreatorId, root.Docusign.WorkflowDateTime, root.Docusign.WorkflowInstanceMap, root.Docusign.WorkflowInstanceState);
+    root.Docusign.WorkflowInstance = factory(root.Docusign.ApiClient, root.Docusign.ProgressInstance, root.Docusign.StartedByInstance, root.Docusign.WorkflowInstanceState);
   }
-}(this, function(ApiClient, AccountId, ProgressInstance, StartedByInstance, TemplateId, WorkflowCreatorId, WorkflowDateTime, WorkflowInstanceMap, WorkflowInstanceState) {
+}(this, function(ApiClient, ProgressInstance, StartedByInstance, WorkflowInstanceState) {
   'use strict';
 
 
@@ -37,11 +37,11 @@
    * Details of a Workflow Instance triggered for a Workflow Definition
    * @alias module:model/WorkflowInstance
    * @class
-   * @param creatorId {module:model/WorkflowCreatorId} 
+   * @param creatorId {String} 
    * @param dacId {String} 
    * @param instanceState {module:model/WorkflowInstanceState} 
-   * @param templateId {module:model/TemplateId} 
-   * @param users {module:model/WorkflowInstanceMap} Contains the list of Users and Steps mapping
+   * @param templateId {String} 
+   * @param users {Object.<String, String>} 
    */
   var exports = function(creatorId, dacId, instanceState, templateId, users) {
     var _this = this;
@@ -61,16 +61,16 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('accountId')) {
-        obj['accountId'] = AccountId.constructFromObject(data['accountId']);
+        obj['accountId'] = ApiClient.convertToType(data['accountId'], 'String');
       }
       if (data.hasOwnProperty('creatorId')) {
-        obj['creatorId'] = WorkflowCreatorId.constructFromObject(data['creatorId']);
+        obj['creatorId'] = ApiClient.convertToType(data['creatorId'], 'String');
       }
       if (data.hasOwnProperty('dacId')) {
         obj['dacId'] = ApiClient.convertToType(data['dacId'], 'String');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = WorkflowDateTime.constructFromObject(data['endDate']);
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'String');
       }
       if (data.hasOwnProperty('instanceName')) {
         obj['instanceName'] = ApiClient.convertToType(data['instanceName'], 'String');
@@ -82,27 +82,27 @@
         obj['progress'] = ProgressInstance.constructFromObject(data['progress']);
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = WorkflowDateTime.constructFromObject(data['startDate']);
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'String');
       }
       if (data.hasOwnProperty('startedBy')) {
         obj['startedBy'] = StartedByInstance.constructFromObject(data['startedBy']);
       }
       if (data.hasOwnProperty('templateId')) {
-        obj['templateId'] = TemplateId.constructFromObject(data['templateId']);
+        obj['templateId'] = ApiClient.convertToType(data['templateId'], 'String');
       }
       if (data.hasOwnProperty('users')) {
-        obj['users'] = WorkflowInstanceMap.constructFromObject(data['users']);
+        obj['users'] = ApiClient.convertToType(data['users'], {'String': 'String'});
       }
     }
     return obj;
   }
 
   /**
-   * @member {module:model/AccountId} accountId
+   * @member {String} accountId
    */
   exports.prototype['accountId'] = undefined;
   /**
-   * @member {module:model/WorkflowCreatorId} creatorId
+   * @member {String} creatorId
    */
   exports.prototype['creatorId'] = undefined;
   /**
@@ -111,7 +111,7 @@
   exports.prototype['dacId'] = undefined;
   /**
    * Track the End time of the Workflow Instance
-   * @member {module:model/WorkflowDateTime} endDate
+   * @member {String} endDate
    */
   exports.prototype['endDate'] = undefined;
   /**
@@ -129,7 +129,7 @@
   exports.prototype['progress'] = undefined;
   /**
    * Track the Start time of the Workflow Instance
-   * @member {module:model/WorkflowDateTime} startDate
+   * @member {String} startDate
    */
   exports.prototype['startDate'] = undefined;
   /**
@@ -137,12 +137,11 @@
    */
   exports.prototype['startedBy'] = undefined;
   /**
-   * @member {module:model/TemplateId} templateId
+   * @member {String} templateId
    */
   exports.prototype['templateId'] = undefined;
   /**
-   * Contains the list of Users and Steps mapping
-   * @member {module:model/WorkflowInstanceMap} users
+   * @member {Object.<String, String>} users
    */
   exports.prototype['users'] = undefined;
 

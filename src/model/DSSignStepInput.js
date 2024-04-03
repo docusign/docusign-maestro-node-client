@@ -36,7 +36,7 @@
    * Constructs a new <code>DSSignStepInput</code>.
    * @alias module:model/DSSignStepInput
    * @class
-   * @param documents {Array.<Object>} ESignDocuments Object list. Each element within the list should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate]
+   * @param documents {Array.<Object>} A list of #/definitions/ESignDocuments. Each element is: ESignDocument Object. This object should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate]
    * @param isEmbeddedSign {Boolean} 
    * @param signers {Array.<module:model/ESignSigner>} 
    */
@@ -77,17 +77,17 @@
   }
 
   /**
-   * ESignDocuments Object list. Each element within the list should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate]
+   * A list of #/definitions/ESignDocuments. Each element is: ESignDocument Object. This object should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate]
    * @member {Array.<Object>} documents
    */
   exports.prototype['documents'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} emailBlurb
    */
   exports.prototype['emailBlurb'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} emailSubject
    */
   exports.prototype['emailSubject'] = undefined;

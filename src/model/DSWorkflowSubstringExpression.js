@@ -36,8 +36,8 @@
    * Constructs a new <code>DSWorkflowSubstringExpression</code>.
    * @alias module:model/DSWorkflowSubstringExpression
    * @class
-   * @param startIndex {Object} Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
-   * @param text {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param startIndex {Object} Reference of #/definitions/NumberOrVariable. Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
+   * @param text {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @param type {module:model/DSWorkflowTransformationExpressionTypesSubstringExpression} 
    */
   var exports = function(startIndex, text, type) {
@@ -74,17 +74,17 @@
   }
 
   /**
-   * Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
+   * Reference of #/definitions/NumberOrVariable. Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
    * @member {Object} length
    */
   exports.prototype['length'] = undefined;
   /**
-   * Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
+   * Reference of #/definitions/NumberOrVariable. Object stands for a number or a Variable. This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable]
    * @member {Object} startIndex
    */
   exports.prototype['startIndex'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} text
    */
   exports.prototype['text'] = undefined;

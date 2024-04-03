@@ -36,7 +36,7 @@
    * Constructs a new <code>DSWorkflowBooleanExpression</code>.
    * @alias module:model/DSWorkflowBooleanExpression
    * @class
-   * @param expressions {Array.<Object>} A list wherein each element should be any of the following object models: [#/definitions/DSWorkflowBooleanExpression, #/definitions/DSWorkflowComparisonExpression]
+   * @param expressions {Array.<Object>} A list of objects. Each object should contain any of the following object models: [#/definitions/DSWorkflowBooleanExpression, #/definitions/DSWorkflowComparisonExpression]
    * @param logicalOperator {module:model/DSWorkflowLogicalOperatorTypes} 
    * @param type {module:model/DSWorkflowExpressionTypesBooleanExpression} 
    */
@@ -71,7 +71,7 @@
   }
 
   /**
-   * A list wherein each element should be any of the following object models: [#/definitions/DSWorkflowBooleanExpression, #/definitions/DSWorkflowComparisonExpression]
+   * A list of objects. Each object should contain any of the following object models: [#/definitions/DSWorkflowBooleanExpression, #/definitions/DSWorkflowComparisonExpression]
    * @member {Array.<Object>} expressions
    */
   exports.prototype['expressions'] = undefined;

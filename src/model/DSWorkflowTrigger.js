@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowTriggerTypes', 'model/DSWorkflowVariableRecord', 'model/EventTypes', 'model/HttpTypes'], factory);
+    define(['ApiClient', 'model/DSWorkflowTriggerTypes', 'model/EventTypes', 'model/HttpTypes'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowTriggerTypes'), require('./DSWorkflowVariableRecord'), require('./EventTypes'), require('./HttpTypes'));
+    module.exports = factory(require('../ApiClient'), require('./DSWorkflowTriggerTypes'), require('./EventTypes'), require('./HttpTypes'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSWorkflowTrigger = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowTriggerTypes, root.Docusign.DSWorkflowVariableRecord, root.Docusign.EventTypes, root.Docusign.HttpTypes);
+    root.Docusign.DSWorkflowTrigger = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowTriggerTypes, root.Docusign.EventTypes, root.Docusign.HttpTypes);
   }
-}(this, function(ApiClient, DSWorkflowTriggerTypes, DSWorkflowVariableRecord, EventTypes, HttpTypes) {
+}(this, function(ApiClient, DSWorkflowTriggerTypes, EventTypes, HttpTypes) {
   'use strict';
 
 
@@ -39,9 +39,9 @@
    * @class
    * @param httpType {module:model/HttpTypes} 
    * @param id {String} 
-   * @param input {module:model/DSWorkflowVariableRecord} 
+   * @param input {Object.<String, Object>} A DS Workflow variable record
    * @param name {String} 
-   * @param output {module:model/DSWorkflowVariableRecord} 
+   * @param output {Object.<String, Object>} A DS Workflow variable record
    * @param type {module:model/DSWorkflowTriggerTypes} 
    */
   var exports = function(httpType, id, input, name, output, type) {
@@ -71,13 +71,13 @@
         obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('input')) {
-        obj['input'] = DSWorkflowVariableRecord.constructFromObject(data['input']);
+        obj['input'] = ApiClient.convertToType(data['input'], {'String': Object});
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('output')) {
-        obj['output'] = DSWorkflowVariableRecord.constructFromObject(data['output']);
+        obj['output'] = ApiClient.convertToType(data['output'], {'String': Object});
       }
       if (data.hasOwnProperty('type')) {
         obj['type'] = DSWorkflowTriggerTypes.constructFromObject(data['type']);
@@ -99,7 +99,8 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {module:model/DSWorkflowVariableRecord} input
+   * A DS Workflow variable record
+   * @member {Object.<String, Object>} input
    */
   exports.prototype['input'] = undefined;
   /**
@@ -107,7 +108,8 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {module:model/DSWorkflowVariableRecord} output
+   * A DS Workflow variable record
+   * @member {Object.<String, Object>} output
    */
   exports.prototype['output'] = undefined;
   /**

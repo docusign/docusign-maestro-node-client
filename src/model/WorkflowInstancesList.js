@@ -34,14 +34,19 @@
 
   /**
    * Constructs a new <code>WorkflowInstancesList</code>.
-   * Returns a list of workflow instances (0 or more).
+   * A list of workflow instances (0 or more).
    * @alias module:model/WorkflowInstancesList
    * @class
+   * @extends Array
    */
   var exports = function() {
     var _this = this;
+    _this = new Array();
+    Object.setPrototypeOf(_this, exports);
 
 
+
+    return _this;
   };
 
   /**
@@ -54,27 +59,12 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      ApiClient.constructFromObject(data, obj, 'WorkflowInstance');
 
-      if (data.hasOwnProperty('instances')) {
-        obj['instances'] = ApiClient.convertToType(data['instances'], [WorkflowInstance]);
-      }
-      if (data.hasOwnProperty('resultSize')) {
-        obj['resultSize'] = ApiClient.convertToType(data['resultSize'], 'Number');
-      }
     }
     return obj;
   }
 
-  /**
-   * Array of Workflow Instances
-   * @member {Array.<module:model/WorkflowInstance>} instances
-   */
-  exports.prototype['instances'] = undefined;
-  /**
-   * Total number of instances returned
-   * @member {Number} resultSize
-   */
-  exports.prototype['resultSize'] = undefined;
 
 
 

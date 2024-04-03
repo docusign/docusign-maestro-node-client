@@ -34,14 +34,19 @@
 
   /**
    * Constructs a new <code>WorkflowStepHistoryList</code>.
-   * Returns the history of the workflow instance steps.
+   * Returns Array of Workflow Step History.
    * @alias module:model/WorkflowStepHistoryList
    * @class
+   * @extends Array
    */
   var exports = function() {
     var _this = this;
+    _this = new Array();
+    Object.setPrototypeOf(_this, exports);
 
 
+
+    return _this;
   };
 
   /**
@@ -54,27 +59,12 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      ApiClient.constructFromObject(data, obj, 'WorkflowStepHistory');
 
-      if (data.hasOwnProperty('resultSize')) {
-        obj['resultSize'] = ApiClient.convertToType(data['resultSize'], 'Number');
-      }
-      if (data.hasOwnProperty('stepHistory')) {
-        obj['stepHistory'] = ApiClient.convertToType(data['stepHistory'], [WorkflowStepHistory]);
-      }
     }
     return obj;
   }
 
-  /**
-   * Total number of workflow step history returned
-   * @member {Number} resultSize
-   */
-  exports.prototype['resultSize'] = undefined;
-  /**
-   * Array of Workflow Step History
-   * @member {Array.<module:model/WorkflowStepHistory>} stepHistory
-   */
-  exports.prototype['stepHistory'] = undefined;
 
 
 
