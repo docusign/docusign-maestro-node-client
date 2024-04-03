@@ -109,13 +109,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = TriggerWorkflowViaPostResponse;
 
       return this.apiClient.callApi(
-        '/accounts/{accountId}/workflows/trigger', 'POST',
+        'aow-auth/v1.0/accounts/{accountId}/workflows/trigger', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

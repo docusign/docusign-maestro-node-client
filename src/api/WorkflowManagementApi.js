@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-	define(['Configuration', 'ApiClient', 'model/DeployRequest', 'model/DeployResponse', 'model/ErrorResponse', 'model/GetConfigurationInstancesResponse', 'model/InvalidWorkflowResponse', 'model/NewOrUpdatedWorkflowDefinitionResponse', 'model/WorkflowDefinition', 'model/WorkflowDefinitionList', 'model/WorkflowDefinitionWithId', 'model/WorkflowDeleteResponse'], factory);
+	define(['Configuration', 'ApiClient', 'model/CreateOrUpdateWorkflowDefinitionRequestBody', 'model/DeployRequest', 'model/DeployResponse', 'model/ErrorResponse', 'model/GetConfigurationInstancesResponse', 'model/InvalidWorkflowResponse', 'model/NewOrUpdatedWorkflowDefinitionResponse', 'model/WorkflowDefinitionList', 'model/WorkflowDefinitionWithId', 'model/WorkflowDeleteResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/DeployRequest'), require('../model/DeployResponse'), require('../model/ErrorResponse'), require('../model/GetConfigurationInstancesResponse'), require('../model/InvalidWorkflowResponse'), require('../model/NewOrUpdatedWorkflowDefinitionResponse'), require('../model/WorkflowDefinition'), require('../model/WorkflowDefinitionList'), require('../model/WorkflowDefinitionWithId'), require('../model/WorkflowDeleteResponse'));
+    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/CreateOrUpdateWorkflowDefinitionRequestBody'), require('../model/DeployRequest'), require('../model/DeployResponse'), require('../model/ErrorResponse'), require('../model/GetConfigurationInstancesResponse'), require('../model/InvalidWorkflowResponse'), require('../model/NewOrUpdatedWorkflowDefinitionResponse'), require('../model/WorkflowDefinitionList'), require('../model/WorkflowDefinitionWithId'), require('../model/WorkflowDeleteResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowManagementApi = factory(root.Docusign.Configuration, root.Docusign.ApiClient, root.Docusign.DeployRequest, root.Docusign.DeployResponse, root.Docusign.ErrorResponse, root.Docusign.GetConfigurationInstancesResponse, root.Docusign.InvalidWorkflowResponse, root.Docusign.NewOrUpdatedWorkflowDefinitionResponse, root.Docusign.WorkflowDefinition, root.Docusign.WorkflowDefinitionList, root.Docusign.WorkflowDefinitionWithId, root.Docusign.WorkflowDeleteResponse);
+    root.Docusign.WorkflowManagementApi = factory(root.Docusign.Configuration, root.Docusign.ApiClient, root.Docusign.CreateOrUpdateWorkflowDefinitionRequestBody, root.Docusign.DeployRequest, root.Docusign.DeployResponse, root.Docusign.ErrorResponse, root.Docusign.GetConfigurationInstancesResponse, root.Docusign.InvalidWorkflowResponse, root.Docusign.NewOrUpdatedWorkflowDefinitionResponse, root.Docusign.WorkflowDefinitionList, root.Docusign.WorkflowDefinitionWithId, root.Docusign.WorkflowDeleteResponse);
   }
-}(this, function(Configuration, ApiClient, DeployRequest, DeployResponse, ErrorResponse, GetConfigurationInstancesResponse, InvalidWorkflowResponse, NewOrUpdatedWorkflowDefinitionResponse, WorkflowDefinition, WorkflowDefinitionList, WorkflowDefinitionWithId, WorkflowDeleteResponse) {
+}(this, function(Configuration, ApiClient, CreateOrUpdateWorkflowDefinitionRequestBody, DeployRequest, DeployResponse, ErrorResponse, GetConfigurationInstancesResponse, InvalidWorkflowResponse, NewOrUpdatedWorkflowDefinitionResponse, WorkflowDefinitionList, WorkflowDefinitionWithId, WorkflowDeleteResponse) {
   'use strict';
 
   /**
@@ -63,7 +63,7 @@
      * Creates a new workflow definition.
      * Creates a new workflow definition.
      * @param {String} accountId Account ID
-     * @param {module:model/WorkflowDefinition} body Request Body to create a new workflow definition.
+     * @param {module:model/CreateOrUpdateWorkflowDefinitionRequestBody} body Request Body to create a new workflow definition.
      * @param {module:api/WorkflowManagementApi~createWorkflowDefinitionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/NewOrUpdatedWorkflowDefinitionResponse}
      */
@@ -97,13 +97,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = NewOrUpdatedWorkflowDefinitionResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions', 'POST',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -156,13 +156,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = WorkflowDeleteResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'DELETE',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -225,13 +225,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = WorkflowDefinitionWithId;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -284,13 +284,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = GetConfigurationInstancesResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -346,13 +346,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = WorkflowDefinitionList;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -411,13 +411,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = DeployResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish', 'POST',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -436,7 +436,7 @@
      * Updates a workflow definition.
      * @param {String} accountId Account ID
      * @param {String} workflowDefinitionId Workflow Definition ID
-     * @param {module:model/WorkflowDefinition} body Request Body to update a workflow definition.
+     * @param {module:model/CreateOrUpdateWorkflowDefinitionRequestBody} body Request Body to update a workflow definition.
      * @param {module:api/WorkflowManagementApi~updateWorkflowDefinitionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/NewOrUpdatedWorkflowDefinitionResponse}
      */
@@ -476,13 +476,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = NewOrUpdatedWorkflowDefinitionResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'PUT',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

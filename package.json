@@ -1,6 +1,6 @@
 {
   "name": "docusign-maestro",
-  "version": "1.0.0-rc2",
+  "version": "1.0.0-rc3",
   "description": "DocuSign Node.js API client.",
   "license": "MIT",
   "main": "src/index.js",
@@ -51,12 +51,12 @@
     ]
   },
   "dependencies": {
-    "csv-stringify": "^1.0.0",
-    "jsonwebtoken": "^9.0.0",
-    "passport-oauth2": "^1.6.1",
-    "safe-buffer": "^5.1.2",
     "superagent": "3.8.2",
-    "superagent-proxy": "^2.0.0"
+    "superagent-proxy": "^2.0.0",
+    "csv-stringify": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",    
+    "passport-oauth2": "^1.6.1",    
+    "safe-buffer": "^5.1.2"    
   },
   "devDependencies": {
     "docdash": "0.4.0",

@@ -38,7 +38,7 @@
    * @class
    * @param eSignTemplateId {String} 
    * @param fileExtension {module:model/DSWorkflowDocGenDocOutputFormat} 
-   * @param name {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param name {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @param type {module:model/ESignDocumentTypesFromDSTemplate} 
    */
   var exports = function(eSignTemplateId, fileExtension, name, type) {
@@ -83,7 +83,7 @@
    */
   exports.prototype['fileExtension'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} name
    */
   exports.prototype['name'] = undefined;

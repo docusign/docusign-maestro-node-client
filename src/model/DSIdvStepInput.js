@@ -36,10 +36,10 @@
    * Constructs a new <code>DSIdvStepInput</code>.
    * @alias module:model/DSIdvStepInput
    * @class
-   * @param backgroundColorBranding {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
-   * @param expectedFullName {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param backgroundColorBranding {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param expectedFullName {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @param retryLimit {Object} This object should be any of the following object models or types: [number, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
-   * @param textColorBranding {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param textColorBranding {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    */
   var exports = function(backgroundColorBranding, expectedFullName, retryLimit, textColorBranding) {
     var _this = this;
@@ -75,12 +75,12 @@
   }
 
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} backgroundColorBranding
    */
   exports.prototype['backgroundColorBranding'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} expectedFullName
    */
   exports.prototype['expectedFullName'] = undefined;
@@ -90,7 +90,7 @@
    */
   exports.prototype['retryLimit'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} textColorBranding
    */
   exports.prototype['textColorBranding'] = undefined;

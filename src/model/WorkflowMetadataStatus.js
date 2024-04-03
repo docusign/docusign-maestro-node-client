@@ -41,7 +41,27 @@
      * value: "inactive"
      * @const
      */
-    "inactive": "inactive"  };
+    "inactive": "inactive",
+    /**
+     * value: "publishing"
+     * @const
+     */
+    "publishing": "publishing",
+    /**
+     * value: "unpublishing"
+     * @const
+     */
+    "unpublishing": "unpublishing",
+    /**
+     * value: "archived"
+     * @const
+     */
+    "archived": "archived",
+    /**
+     * value: "archiving"
+     * @const
+     */
+    "archiving": "archiving"  };
 
   /**
    * Returns a <code>WorkflowMetadataStatus</code> enum value from a Javascript object name.

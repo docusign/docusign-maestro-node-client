@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowExpressionTypesParallelExpression', 'model/RecordStringBoolean'], factory);
+    define(['ApiClient', 'model/DSWorkflowExpressionTypesParallelExpression'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowExpressionTypesParallelExpression'), require('./RecordStringBoolean'));
+    module.exports = factory(require('../ApiClient'), require('./DSWorkflowExpressionTypesParallelExpression'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSWorkflowParallelExpression = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowExpressionTypesParallelExpression, root.Docusign.RecordStringBoolean);
+    root.Docusign.DSWorkflowParallelExpression = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowExpressionTypesParallelExpression);
   }
-}(this, function(ApiClient, DSWorkflowExpressionTypesParallelExpression, RecordStringBoolean) {
+}(this, function(ApiClient, DSWorkflowExpressionTypesParallelExpression) {
   'use strict';
 
 
@@ -36,7 +36,7 @@
    * Constructs a new <code>DSWorkflowParallelExpression</code>.
    * @alias module:model/DSWorkflowParallelExpression
    * @class
-   * @param parallelCompletionSettings {module:model/RecordStringBoolean} 
+   * @param parallelCompletionSettings {Object.<String, Boolean>} 
    * @param type {module:model/DSWorkflowExpressionTypesParallelExpression} 
    */
   var exports = function(parallelCompletionSettings, type) {
@@ -57,7 +57,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('parallelCompletionSettings')) {
-        obj['parallelCompletionSettings'] = RecordStringBoolean.constructFromObject(data['parallelCompletionSettings']);
+        obj['parallelCompletionSettings'] = ApiClient.convertToType(data['parallelCompletionSettings'], {'String': 'Boolean'});
       }
       if (data.hasOwnProperty('type')) {
         obj['type'] = DSWorkflowExpressionTypesParallelExpression.constructFromObject(data['type']);
@@ -67,7 +67,7 @@
   }
 
   /**
-   * @member {module:model/RecordStringBoolean} parallelCompletionSettings
+   * @member {Object.<String, Boolean>} parallelCompletionSettings
    */
   exports.prototype['parallelCompletionSettings'] = undefined;
   /**

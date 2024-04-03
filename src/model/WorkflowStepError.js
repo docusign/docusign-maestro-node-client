@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/WorkflowDateTime', 'model/WorkflowStepErrorError'], factory);
+    define(['ApiClient', 'model/WorkflowStepErrorError'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./WorkflowDateTime'), require('./WorkflowStepErrorError'));
+    module.exports = factory(require('../ApiClient'), require('./WorkflowStepErrorError'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowStepError = factory(root.Docusign.ApiClient, root.Docusign.WorkflowDateTime, root.Docusign.WorkflowStepErrorError);
+    root.Docusign.WorkflowStepError = factory(root.Docusign.ApiClient, root.Docusign.WorkflowStepErrorError);
   }
-}(this, function(ApiClient, WorkflowDateTime, WorkflowStepErrorError) {
+}(this, function(ApiClient, WorkflowStepErrorError) {
   'use strict';
 
 
@@ -59,7 +59,7 @@
         obj['code'] = ApiClient.convertToType(data['code'], 'String');
       }
       if (data.hasOwnProperty('endTime')) {
-        obj['endTime'] = WorkflowDateTime.constructFromObject(data['endTime']);
+        obj['endTime'] = ApiClient.convertToType(data['endTime'], 'String');
       }
       if (data.hasOwnProperty('error')) {
         obj['error'] = WorkflowStepErrorError.constructFromObject(data['error']);
@@ -68,7 +68,7 @@
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('startTime')) {
-        obj['startTime'] = WorkflowDateTime.constructFromObject(data['startTime']);
+        obj['startTime'] = ApiClient.convertToType(data['startTime'], 'String');
       }
     }
     return obj;
@@ -81,7 +81,7 @@
   exports.prototype['code'] = undefined;
   /**
    * Track the End time of the error retry/processed
-   * @member {module:model/WorkflowDateTime} endTime
+   * @member {String} endTime
    */
   exports.prototype['endTime'] = undefined;
   /**
@@ -95,7 +95,7 @@
   exports.prototype['name'] = undefined;
   /**
    * Track Start time of the error occurred
-   * @member {module:model/WorkflowDateTime} startTime
+   * @member {String} startTime
    */
   exports.prototype['startTime'] = undefined;
 

@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowParticipantRecord', 'model/DSWorkflowTrigger', 'model/DSWorkflowVariableRecord', 'model/VersionString'], factory);
+    define(['ApiClient', 'model/DSWorkflowTrigger', 'model/Participant'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowParticipantRecord'), require('./DSWorkflowTrigger'), require('./DSWorkflowVariableRecord'), require('./VersionString'));
+    module.exports = factory(require('../ApiClient'), require('./DSWorkflowTrigger'), require('./Participant'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowDefinition = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowParticipantRecord, root.Docusign.DSWorkflowTrigger, root.Docusign.DSWorkflowVariableRecord, root.Docusign.VersionString);
+    root.Docusign.WorkflowDefinition = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowTrigger, root.Docusign.Participant);
   }
-}(this, function(ApiClient, DSWorkflowParticipantRecord, DSWorkflowTrigger, DSWorkflowVariableRecord, VersionString) {
+}(this, function(ApiClient, DSWorkflowTrigger, Participant) {
   'use strict';
 
 
@@ -38,11 +38,11 @@
    * @alias module:model/WorkflowDefinition
    * @class
    * @param accountId {String} 
-   * @param documentVersion {module:model/VersionString} 
-   * @param schemaVersion {module:model/VersionString} 
-   * @param steps {Array.<Object>} A list of DS Workflow Steps. Each element in the list should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
+   * @param documentVersion {String} 
+   * @param schemaVersion {String} 
+   * @param steps {Array.<Object>} A list of #/definitions/DSWorkflowStep. Each element is: A DS Workflow Step. This object should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
    * @param trigger {module:model/DSWorkflowTrigger} 
-   * @param variables {module:model/DSWorkflowVariableRecord} 
+   * @param variables {Object.<String, Object>} A DS Workflow variable record
    * @param workflowDescription {String} 
    * @param workflowName {String} 
    */
@@ -70,13 +70,13 @@
         obj['createdByName'] = ApiClient.convertToType(data['createdByName'], 'String');
       }
       if (data.hasOwnProperty('documentVersion')) {
-        obj['documentVersion'] = VersionString.constructFromObject(data['documentVersion']);
+        obj['documentVersion'] = ApiClient.convertToType(data['documentVersion'], 'String');
       }
       if (data.hasOwnProperty('participants')) {
-        obj['participants'] = DSWorkflowParticipantRecord.constructFromObject(data['participants']);
+        obj['participants'] = ApiClient.convertToType(data['participants'], {'String': Participant});
       }
       if (data.hasOwnProperty('schemaVersion')) {
-        obj['schemaVersion'] = VersionString.constructFromObject(data['schemaVersion']);
+        obj['schemaVersion'] = ApiClient.convertToType(data['schemaVersion'], 'String');
       }
       if (data.hasOwnProperty('steps')) {
         obj['steps'] = ApiClient.convertToType(data['steps'], [Object]);
@@ -85,7 +85,7 @@
         obj['trigger'] = DSWorkflowTrigger.constructFromObject(data['trigger']);
       }
       if (data.hasOwnProperty('variables')) {
-        obj['variables'] = DSWorkflowVariableRecord.constructFromObject(data['variables']);
+        obj['variables'] = ApiClient.convertToType(data['variables'], {'String': Object});
       }
       if (data.hasOwnProperty('workflowDescription')) {
         obj['workflowDescription'] = ApiClient.convertToType(data['workflowDescription'], 'String');
@@ -107,19 +107,20 @@
    */
   exports.prototype['createdByName'] = undefined;
   /**
-   * @member {module:model/VersionString} documentVersion
+   * @member {String} documentVersion
    */
   exports.prototype['documentVersion'] = undefined;
   /**
-   * @member {module:model/DSWorkflowParticipantRecord} participants
+   * A DS Workflow participant record
+   * @member {Object.<String, module:model/Participant>} participants
    */
   exports.prototype['participants'] = undefined;
   /**
-   * @member {module:model/VersionString} schemaVersion
+   * @member {String} schemaVersion
    */
   exports.prototype['schemaVersion'] = undefined;
   /**
-   * A list of DS Workflow Steps. Each element in the list should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
+   * A list of #/definitions/DSWorkflowStep. Each element is: A DS Workflow Step. This object should be any of the following object models: [#/definitions/DSServiceStep, #/definitions/DSTransformationStep, #/definitions/DSDocGenStep, #/definitions/DSSignStep]
    * @member {Array.<Object>} steps
    */
   exports.prototype['steps'] = undefined;
@@ -128,7 +129,8 @@
    */
   exports.prototype['trigger'] = undefined;
   /**
-   * @member {module:model/DSWorkflowVariableRecord} variables
+   * A DS Workflow variable record
+   * @member {Object.<String, Object>} variables
    */
   exports.prototype['variables'] = undefined;
   /**

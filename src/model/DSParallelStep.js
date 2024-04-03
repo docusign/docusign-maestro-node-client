@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowLanesRecord', 'model/DSWorkflowParallelExpression', 'model/DSWorkflowStepTypesParallel'], factory);
+    define(['ApiClient', 'model/DSWorkflowLane', 'model/DSWorkflowParallelExpression', 'model/DSWorkflowStepTypesParallel'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowLanesRecord'), require('./DSWorkflowParallelExpression'), require('./DSWorkflowStepTypesParallel'));
+    module.exports = factory(require('../ApiClient'), require('./DSWorkflowLane'), require('./DSWorkflowParallelExpression'), require('./DSWorkflowStepTypesParallel'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSParallelStep = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowLanesRecord, root.Docusign.DSWorkflowParallelExpression, root.Docusign.DSWorkflowStepTypesParallel);
+    root.Docusign.DSParallelStep = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowLane, root.Docusign.DSWorkflowParallelExpression, root.Docusign.DSWorkflowStepTypesParallel);
   }
-}(this, function(ApiClient, DSWorkflowLanesRecord, DSWorkflowParallelExpression, DSWorkflowStepTypesParallel) {
+}(this, function(ApiClient, DSWorkflowLane, DSWorkflowParallelExpression, DSWorkflowStepTypesParallel) {
   'use strict';
 
 
@@ -38,7 +38,7 @@
    * @class
    * @param expression {module:model/DSWorkflowParallelExpression} 
    * @param id {String} 
-   * @param lanes {module:model/DSWorkflowLanesRecord} 
+   * @param lanes {Object.<String, module:model/DSWorkflowLane>} 
    * @param name {String} 
    * @param type {module:model/DSWorkflowStepTypesParallel} 
    */
@@ -66,7 +66,7 @@
         obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('lanes')) {
-        obj['lanes'] = DSWorkflowLanesRecord.constructFromObject(data['lanes']);
+        obj['lanes'] = ApiClient.convertToType(data['lanes'], {'String': DSWorkflowLane});
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -87,7 +87,7 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {module:model/DSWorkflowLanesRecord} lanes
+   * @member {Object.<String, module:model/DSWorkflowLane>} lanes
    */
   exports.prototype['lanes'] = undefined;
   /**

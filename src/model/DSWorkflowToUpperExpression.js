@@ -36,7 +36,7 @@
    * Constructs a new <code>DSWorkflowToUpperExpression</code>.
    * @alias module:model/DSWorkflowToUpperExpression
    * @class
-   * @param text {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param text {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @param type {module:model/DSWorkflowTransformationExpressionTypesToUpperExpression} 
    */
   var exports = function(text, type) {
@@ -67,7 +67,7 @@
   }
 
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} text
    */
   exports.prototype['text'] = undefined;

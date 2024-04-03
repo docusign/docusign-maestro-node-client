@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-	define(['Configuration', 'ApiClient', 'model/CancelResponse', 'model/ErrorResponse', 'model/WorkflowInstance', 'model/WorkflowInstancesList', 'model/WorkflowStepHistoryList'], factory);
+	define(['Configuration', 'ApiClient', 'model/CancelResponse', 'model/ErrorResponse', 'model/WorkflowInstance', 'model/WorkflowStepHistory'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/CancelResponse'), require('../model/ErrorResponse'), require('../model/WorkflowInstance'), require('../model/WorkflowInstancesList'), require('../model/WorkflowStepHistoryList'));
+    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/CancelResponse'), require('../model/ErrorResponse'), require('../model/WorkflowInstance'), require('../model/WorkflowStepHistory'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.WorkflowInstanceManagementApi = factory(root.Docusign.Configuration, root.Docusign.ApiClient, root.Docusign.CancelResponse, root.Docusign.ErrorResponse, root.Docusign.WorkflowInstance, root.Docusign.WorkflowInstancesList, root.Docusign.WorkflowStepHistoryList);
+    root.Docusign.WorkflowInstanceManagementApi = factory(root.Docusign.Configuration, root.Docusign.ApiClient, root.Docusign.CancelResponse, root.Docusign.ErrorResponse, root.Docusign.WorkflowInstance, root.Docusign.WorkflowStepHistory);
   }
-}(this, function(Configuration, ApiClient, CancelResponse, ErrorResponse, WorkflowInstance, WorkflowInstancesList, WorkflowStepHistoryList) {
+}(this, function(Configuration, ApiClient, CancelResponse, ErrorResponse, WorkflowInstance, WorkflowStepHistory) {
   'use strict';
 
   /**
@@ -98,13 +98,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = CancelResponse;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/instances/{instanceId}/cancel', 'POST',
+        'aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -114,7 +114,7 @@
      * (Optional) Callback function to receive the result of the getWorkflowHistory operation. If none specified a Promise will be returned.
      * @callback module:api/WorkflowInstanceManagementApi~getWorkflowHistoryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/WorkflowStepHistoryList} data The data returned by the service call.
+     * @param {Array.<module:model/WorkflowStepHistory>} data The data returned by the service call.
      * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
      */
 
@@ -124,7 +124,7 @@
      * @param {String} accountId Account ID
      * @param {String} instanceId DS Workflow Instance Id (dacId)
      * @param {module:api/WorkflowInstanceManagementApi~getWorkflowHistoryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/WorkflowStepHistoryList}
+     * data is of type: {@link Array.<module:model/WorkflowStepHistory>}
      */
     this.getWorkflowHistory = function(accountId, instanceId, callback) {
       var postBody = null;
@@ -157,13 +157,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = WorkflowStepHistoryList;
+      var returnType = [WorkflowStepHistory];
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/instances/{instanceId}/history', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -223,13 +223,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = WorkflowInstance;
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -239,7 +239,7 @@
      * (Optional) Callback function to receive the result of the getWorkflowInstances operation. If none specified a Promise will be returned.
      * @callback module:api/WorkflowInstanceManagementApi~getWorkflowInstancesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/WorkflowInstancesList} data The data returned by the service call.
+     * @param {Array.<module:model/WorkflowInstance>} data The data returned by the service call.
      * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
      */
 
@@ -249,7 +249,7 @@
      * @param {String} accountId Account ID
      * @param {String} workflowDefinitionId Workflow Definition ID
      * @param {module:api/WorkflowInstanceManagementApi~getWorkflowInstancesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/WorkflowInstancesList}
+     * data is of type: {@link Array.<module:model/WorkflowInstance>}
      */
     this.getWorkflowInstances = function(accountId, workflowDefinitionId, callback) {
       var postBody = null;
@@ -282,13 +282,13 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = WorkflowInstancesList;
+      var returnType = [WorkflowInstance];
 
       return this.apiClient.callApi(
-        '/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances', 'GET',
+        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

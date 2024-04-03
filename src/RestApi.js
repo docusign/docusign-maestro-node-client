@@ -1,5 +1,5 @@
 const PRODUCTION_BASE_PATH = 'https://www.docusign.net/restapi';
-const DEMO_BASE_PATH = 'https://demo.services.docusign.net/aow-manage/v1.0';
+const DEMO_BASE_PATH = 'https://demo.services.docusign.net';
 const STAGE_BASE_PATH = 'https://stage.docusign.net/restapi';
 
 module.exports = {

@@ -36,13 +36,12 @@
    * Constructs a new <code>CancelResponse</code>.
    * @alias module:model/CancelResponse
    * @class
-   * @param code {String} 
    * @param message {String} 
    */
-  var exports = function(code, message) {
+  var exports = function(message) {
     var _this = this;
 
-    _this['code'] = code;    _this['message'] = message;
+    _this['message'] = message;
   };
 
   /**

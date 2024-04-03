@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSDocGenStepInput', 'model/DSWorkflowStepTypesDSDocGen', 'model/RecordStringOrVariableOrTransformation', 'model/RecordToNever'], factory);
+    define(['ApiClient', 'model/DSDocGenStepInput', 'model/DSWorkflowStepTypesDSDocGen', 'model/RecordToNever'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSDocGenStepInput'), require('./DSWorkflowStepTypesDSDocGen'), require('./RecordStringOrVariableOrTransformation'), require('./RecordToNever'));
+    module.exports = factory(require('../ApiClient'), require('./DSDocGenStepInput'), require('./DSWorkflowStepTypesDSDocGen'), require('./RecordToNever'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSDocGenStep = factory(root.Docusign.ApiClient, root.Docusign.DSDocGenStepInput, root.Docusign.DSWorkflowStepTypesDSDocGen, root.Docusign.RecordStringOrVariableOrTransformation, root.Docusign.RecordToNever);
+    root.Docusign.DSDocGenStep = factory(root.Docusign.ApiClient, root.Docusign.DSDocGenStepInput, root.Docusign.DSWorkflowStepTypesDSDocGen, root.Docusign.RecordToNever);
   }
-}(this, function(ApiClient, DSDocGenStepInput, DSWorkflowStepTypesDSDocGen, RecordStringOrVariableOrTransformation, RecordToNever) {
+}(this, function(ApiClient, DSDocGenStepInput, DSWorkflowStepTypesDSDocGen, RecordToNever) {
   'use strict';
 
 
@@ -40,7 +40,7 @@
    * @param id {String} 
    * @param input {module:model/DSDocGenStepInput} 
    * @param name {String} 
-   * @param output {module:model/RecordStringOrVariableOrTransformation} 
+   * @param output {Object.<String, Object>} A Record of strings to Strings, Variables, or Transformation Expressions
    * @param type {module:model/DSWorkflowStepTypesDSDocGen} 
    */
   var exports = function(config, id, input, name, output, type) {
@@ -73,7 +73,7 @@
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('output')) {
-        obj['output'] = RecordStringOrVariableOrTransformation.constructFromObject(data['output']);
+        obj['output'] = ApiClient.convertToType(data['output'], {'String': Object});
       }
       if (data.hasOwnProperty('type')) {
         obj['type'] = DSWorkflowStepTypesDSDocGen.constructFromObject(data['type']);
@@ -99,7 +99,8 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {module:model/RecordStringOrVariableOrTransformation} output
+   * A Record of strings to Strings, Variables, or Transformation Expressions
+   * @member {Object.<String, Object>} output
    */
   exports.prototype['output'] = undefined;
   /**

@@ -36,9 +36,9 @@
    * Constructs a new <code>ESignDocumentFromPreviousStep</code>.
    * @alias module:model/ESignDocumentFromPreviousStep
    * @class
-   * @param documentFromPreviousStep {Object} DS Workflow Variables
+   * @param documentFromPreviousStep {Object} Reference of #/definitions/DSWorkflowVariable. DS Workflow Variables
    * @param fileExtension {module:model/DSWorkflowDocGenDocOutputFormat} 
-   * @param name {Object} Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * @param name {Object} Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @param type {module:model/ESignDocumentTypesFromPreviousStep} 
    */
   var exports = function(documentFromPreviousStep, fileExtension, name, type) {
@@ -75,7 +75,7 @@
   }
 
   /**
-   * DS Workflow Variables
+   * Reference of #/definitions/DSWorkflowVariable. DS Workflow Variables
    * @member {Object} documentFromPreviousStep
    */
   exports.prototype['documentFromPreviousStep'] = undefined;
@@ -84,7 +84,7 @@
    */
   exports.prototype['fileExtension'] = undefined;
   /**
-   * Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
+   * Reference of #/definitions/StringOrVariableOrTransformation. Object stands for a String or a Variable or a Transformation. This object should be any of the following object models or types: [string, #/definitions/DSWorkflowVariable, #/definitions/DSWorkflowTransformationExpression]
    * @member {Object} name
    */
   exports.prototype['name'] = undefined;
