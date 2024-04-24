@@ -105,7 +105,13 @@
      * value: "Participant"
      * @const
      */
-    participant: "Participant"
+    participant: "Participant",
+
+    /**
+     * value: "OnBehalfOf"
+     * @const
+     */
+    onBehalfOf: "OnBehalfOf"
   };
 
 

@@ -41,7 +41,7 @@
    * @param dacId {String} 
    * @param instanceState {module:model/WorkflowInstanceState} 
    * @param templateId {String} 
-   * @param users {Object.<String, String>} 
+   * @param users {Object.<String, String>} Contains the list of Users and Steps mapping
    */
   var exports = function(creatorId, dacId, instanceState, templateId, users) {
     var _this = this;
@@ -141,6 +141,7 @@
    */
   exports.prototype['templateId'] = undefined;
   /**
+   * Contains the list of Users and Steps mapping
    * @member {Object.<String, String>} users
    */
   exports.prototype['users'] = undefined;

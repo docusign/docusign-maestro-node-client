@@ -46,7 +46,12 @@
      * value: "Failed"
      * @const
      */
-    "failed": "Failed"  };
+    "failed": "Failed",
+    /**
+     * value: "Canceled"
+     * @const
+     */
+    "canceled": "Canceled"  };
 
   /**
    * Returns a <code>WorkflowStepHistoryState</code> enum value from a Javascript object name.

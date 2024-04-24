@@ -33,6 +33,71 @@
    */
   var exports = {
     /**
+     * value: "envelope-sent"
+     * @const
+     */
+    "envelopeSent": "envelope-sent",
+    /**
+     * value: "envelope-delivered"
+     * @const
+     */
+    "envelopeDelivered": "envelope-delivered",
+    /**
+     * value: "envelope-completed"
+     * @const
+     */
+    "envelopeCompleted": "envelope-completed",
+    /**
+     * value: "envelope-declined"
+     * @const
+     */
+    "envelopeDeclined": "envelope-declined",
+    /**
+     * value: "envelope-voided"
+     * @const
+     */
+    "envelopeVoided": "envelope-voided",
+    /**
+     * value: "envelope-created"
+     * @const
+     */
+    "envelopeCreated": "envelope-created",
+    /**
+     * value: "envelope-resent"
+     * @const
+     */
+    "envelopeResent": "envelope-resent",
+    /**
+     * value: "envelope-corrected"
+     * @const
+     */
+    "envelopeCorrected": "envelope-corrected",
+    /**
+     * value: "envelope-purge"
+     * @const
+     */
+    "envelopePurge": "envelope-purge",
+    /**
+     * value: "envelope-deleted"
+     * @const
+     */
+    "envelopeDeleted": "envelope-deleted",
+    /**
+     * value: "envelope-discard"
+     * @const
+     */
+    "envelopeDiscard": "envelope-discard",
+    /**
+     * value: "Delivery Failed"
+     * @const
+     */
+    "deliveryFailed": "Delivery Failed",
+    /**
+     * value: "Authentication Failed"
+     * @const
+     */
+    "authenticationFailed": "Authentication Failed",
+    /**
      * value: "Sent"
      * @const
      */
