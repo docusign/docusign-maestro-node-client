@@ -61,7 +61,17 @@
      * value: "Not Deployed"
      * @const
      */
-    "notDeployed": "Not Deployed"  };
+    "notDeployed": "Not Deployed",
+    /**
+     * value: "Unpublish in Progress"
+     * @const
+     */
+    "unpublishInProgress": "Unpublish in Progress",
+    /**
+     * value: "Unpublished"
+     * @const
+     */
+    "unpublished": "Unpublished"  };
 
   /**
    * Returns a <code>DeploymentStatus</code> enum value from a Javascript object name.

@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DSWorkflowVariableSourceTypesParticipant', 'model/ParticipantKeys'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DSWorkflowVariableSourceTypesParticipant'), require('./ParticipantKeys'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.Docusign) {
       root.Docusign = {};
     }
-    root.Docusign.DSWorkflowVariableFromParticipant = factory(root.Docusign.ApiClient, root.Docusign.DSWorkflowVariableSourceTypesParticipant, root.Docusign.ParticipantKeys);
+    root.Docusign.DSWorkflowVariableFromParticipant = factory(root.Docusign.ApiClient);
   }
-}(this, function(ApiClient, DSWorkflowVariableSourceTypesParticipant, ParticipantKeys) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -34,17 +34,14 @@
 
   /**
    * Constructs a new <code>DSWorkflowVariableFromParticipant</code>.
-   * DS Workflow Variable from a Participant
+   * DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition.
    * @alias module:model/DSWorkflowVariableFromParticipant
    * @class
-   * @param key {module:model/ParticipantKeys} 
-   * @param participantId {String} 
-   * @param source {module:model/DSWorkflowVariableSourceTypesParticipant} 
    */
-  var exports = function(key, participantId, source) {
+  var exports = function() {
     var _this = this;
 
-    _this['key'] = key;    _this['participantId'] = participantId;    _this['source'] = source;
+
   };
 
   /**
@@ -58,31 +55,10 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('key')) {
-        obj['key'] = ParticipantKeys.constructFromObject(data['key']);
-      }
-      if (data.hasOwnProperty('participantId')) {
-        obj['participantId'] = ApiClient.convertToType(data['participantId'], 'String');
-      }
-      if (data.hasOwnProperty('source')) {
-        obj['source'] = DSWorkflowVariableSourceTypesParticipant.constructFromObject(data['source']);
-      }
     }
     return obj;
   }
 
-  /**
-   * @member {module:model/ParticipantKeys} key
-   */
-  exports.prototype['key'] = undefined;
-  /**
-   * @member {String} participantId
-   */
-  exports.prototype['participantId'] = undefined;
-  /**
-   * @member {module:model/DSWorkflowVariableSourceTypesParticipant} source
-   */
-  exports.prototype['source'] = undefined;
 
 
 

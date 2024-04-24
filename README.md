@@ -26,7 +26,7 @@ commented out
 *   Node 12+
 
 ## Installation
-This SDK is provided as open source, which enables you to customize its functionality to suit your particular use case. To do so, download or clone the repository. If the SDK’s given functionality meets your integration needs, or if you’re working through our [code examples](https://developers.docusign.com/docs/maestro-rest-api/how-to/) from the [DocuSign Developer Center](https://developers.docusign.com/), you merely need to install it by following the instructions below.
+This SDK is provided as open source, which enables you to customize its functionality to suit your particular use case. To do so, download or clone the repository. If the SDK’s given functionality meets your integration needs, or if you’re working through our [code examples](https://developers.docusign.com/docs/maestro-api/how-to/) from the [DocuSign Developer Center](https://developers.docusign.com/), you merely need to install it by following the instructions below.
 
 ### NPM:
 1. Open your preferred command-line console, then navigate to your project.
@@ -38,7 +38,7 @@ This client has the following external dependencies:
 
 **Minimum:**
 *   DocuSign-maestro
-*   Superagent 3.8.2
+*   Axios 1.6.8
 
 **Optional:**
 *   Async v2.6.2

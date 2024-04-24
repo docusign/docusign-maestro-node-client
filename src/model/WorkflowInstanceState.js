@@ -33,6 +33,11 @@
    */
   var exports = {
     /**
+     * value: "Created"
+     * @const
+     */
+    "created": "Created",
+    /**
      * value: "In Progress"
      * @const
      */
@@ -46,7 +51,12 @@
      * value: "Failed"
      * @const
      */
-    "failed": "Failed"  };
+    "failed": "Failed",
+    /**
+     * value: "Canceled"
+     * @const
+     */
+    "canceled": "Canceled"  };
 
   /**
    * Returns a <code>WorkflowInstanceState</code> enum value from a Javascript object name.
