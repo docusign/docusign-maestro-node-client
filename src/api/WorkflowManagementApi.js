@@ -103,7 +103,7 @@
       var returnType = NewOrUpdatedWorkflowDefinitionResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions', 'POST',
+        '/v1/accounts/{accountId}/management/workflow_definitions', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -162,7 +162,7 @@
       var returnType = WorkflowDeleteResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'DELETE',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -231,7 +231,7 @@
       var returnType = WorkflowDefinitionWithId;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'GET',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -290,7 +290,7 @@
       var returnType = GetConfigurationInstancesResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances', 'GET',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/config_instances', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -352,7 +352,7 @@
       var returnType = WorkflowDefinitionList;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions', 'GET',
+        '/v1/accounts/{accountId}/management/workflow_definitions', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -417,7 +417,7 @@
       var returnType = DeployResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish', 'POST',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/publish', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -482,7 +482,7 @@
       var returnType = NewOrUpdatedWorkflowDefinitionResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}', 'PUT',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

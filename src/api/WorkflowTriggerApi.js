@@ -63,6 +63,7 @@
      * Creates a new workflow instance after authenticating with DS Account Server
      * Creates a new workflow instance after authenticating with DS Account Server
      * @param {String} accountId Account ID
+     * @param {String} workflowDefinitionId Workflow Definition ID
      * @param {module:model/TriggerPayload} body JSON payload that will be passed to the triggered workflow
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
      * @param {String} optsOrCallback.mtid Managed Token Id registered with DS Account Server
@@ -70,7 +71,7 @@
      * @param {module:api/WorkflowTriggerApi~triggerWorkflowCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TriggerWorkflowViaPostResponse}
      */
-    this.triggerWorkflow = function(body, accountId, optsOrCallback, callback) {
+    this.triggerWorkflow = function(body, accountId, workflowDefinitionId, optsOrCallback, callback) {
       optsOrCallback = optsOrCallback || {};
 
       if (typeof optsOrCallback === 'function') {
@@ -83,6 +84,11 @@
       // verify the required parameter 'accountId' is set
       if (accountId === undefined || accountId === null) {
         throw new Error("Missing the required parameter 'accountId' when calling triggerWorkflow");
+      }
+
+      // verify the required parameter 'workflowDefinitionId' is set
+      if (workflowDefinitionId === undefined || workflowDefinitionId === null) {
+        throw new Error("Missing the required parameter 'workflowDefinitionId' when calling triggerWorkflow");
       }
 
       // verify the required parameter 'body' is set
@@ -98,7 +104,8 @@
       }
 
       var pathParams = {
-        'accountId': accountId
+        'accountId': accountId,
+        'workflowDefinitionId': workflowDefinitionId
       };
       var queryParams = {
         'mtid': optsOrCallback['mtid'],
@@ -115,7 +122,7 @@
       var returnType = TriggerWorkflowViaPostResponse;
 
       return this.apiClient.callApi(
-        'aow-auth/v1.0/accounts/{accountId}/workflows/trigger', 'POST',
+        '/v1/accounts/{accountId}/workflow_definitions/{workflowDefinitionId}/trigger', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
