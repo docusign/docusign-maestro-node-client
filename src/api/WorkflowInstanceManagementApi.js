@@ -104,7 +104,7 @@
       var returnType = CancelResponse;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel', 'POST',
+        '/v1/accounts/{accountId}/management/instances/{instanceId}/cancel', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -163,7 +163,7 @@
       var returnType = [WorkflowStepHistory];
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history', 'GET',
+        '/v1/accounts/{accountId}/management/instances/{instanceId}/history', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -229,7 +229,7 @@
       var returnType = WorkflowInstance;
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}', 'GET',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances/{instanceId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -288,7 +288,7 @@
       var returnType = [WorkflowInstance];
 
       return this.apiClient.callApi(
-        'aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances', 'GET',
+        '/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
