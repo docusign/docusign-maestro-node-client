@@ -1,0 +1,4914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>module:ApiClient - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html"></a></li><li><a href="global.html#_10001">_10001</a></li><li><a href="global.html#_10002">_10002</a></li><li><a href="global.html#_10003">_10003</a></li><li><a href="global.html#_10004">_10004</a></li><li><a href="global.html#_10005">_10005</a></li><li><a href="global.html#_10006">_10006</a></li><li><a href="global.html#_10007">_10007</a></li><li><a href="global.html#_10008">_10008</a></li><li><a href="global.html#_10009">_10009</a></li><li><a href="global.html#_10101">_10101</a></li><li><a href="global.html#_10201">_10201</a></li><li><a href="global.html#_10202">_10202</a></li><li><a href="global.html#_10301">_10301</a></li><li><a href="global.html#_10302">_10302</a></li><li><a href="global.html#_10401">_10401</a></li><li><a href="global.html#_10801">_10801</a></li><li><a href="global.html#_10802">_10802</a></li><li><a href="global.html#_10999">_10999</a></li><li><a href="global.html#_delete">_delete</a></li><li><a href="global.html#active">active</a></li><li><a href="global.html#and">and</a></li><li><a href="global.html#application">application</a></li><li><a href="global.html#archived">archived</a></li><li><a href="global.html#archiving">archiving</a></li><li><a href="global.html#authenticationFailed">authenticationFailed</a></li><li><a href="global.html#bearer">bearer</a></li><li><a href="global.html#booleanExpression">booleanExpression</a></li><li><a href="global.html#canceled">canceled</a></li><li><a href="global.html#comparisonExpression">comparisonExpression</a></li><li><a href="global.html#completed">completed</a></li><li><a href="global.html#concatExpression">concatExpression</a></li><li><a href="global.html#contains">contains</a></li><li><a href="global.html#created">created</a></li><li><a href="global.html#deleted">deleted</a></li><li><a href="global.html#deleteInProgress">deleteInProgress</a></li><li><a href="global.html#deleteReplicated">deleteReplicated</a></li><li><a href="global.html#deleteReplicationFailed">deleteReplicationFailed</a></li><li><a href="global.html#deleteReplicationInProgress">deleteReplicationInProgress</a></li><li><a href="global.html#delivered">delivered</a></li><li><a href="global.html#deliveryFailed">deliveryFailed</a></li><li><a href="global.html#deployed">deployed</a></li><li><a href="global.html#deploymentInProgress">deploymentInProgress</a></li><li><a href="global.html#deployReplicated">deployReplicated</a></li><li><a href="global.html#deployReplicationFailed">deployReplicationFailed</a></li><li><a href="global.html#deployReplicationInProgress">deployReplicationInProgress</a></li><li><a href="global.html#disable">disable</a></li><li><a href="global.html#docx">docx</a></li><li><a href="global.html#DS_IDV">DS_IDV</a></li><li><a href="global.html#dSDocGen">dSDocGen</a></li><li><a href="global.html#dSDoUntil">dSDoUntil</a></li><li><a href="global.html#dSIfElse">dSIfElse</a></li><li><a href="global.html#dSLoop">dSLoop</a></li><li><a href="global.html#dSParallel">dSParallel</a></li><li><a href="global.html#dSSign">dSSign</a></li><li><a href="global.html#dSTransformation">dSTransformation</a></li><li><a href="global.html#dSWebForms">dSWebForms</a></li><li><a href="global.html#endsWith">endsWith</a></li><li><a href="global.html#envelopeCompleted">envelopeCompleted</a></li><li><a href="global.html#envelopeCorrected">envelopeCorrected</a></li><li><a href="global.html#envelopeCreated">envelopeCreated</a></li><li><a href="global.html#envelopeDeclined">envelopeDeclined</a></li><li><a href="global.html#envelopeDeleted">envelopeDeleted</a></li><li><a href="global.html#envelopeDelivered">envelopeDelivered</a></li><li><a href="global.html#envelopeDiscard">envelopeDiscard</a></li><li><a href="global.html#envelopePurge">envelopePurge</a></li><li><a href="global.html#envelopeResent">envelopeResent</a></li><li><a href="global.html#envelopeSent">envelopeSent</a></li><li><a href="global.html#envelopeVoided">envelopeVoided</a></li><li><a href="global.html#equal">equal</a></li><li><a href="global.html#failed">failed</a></li><li><a href="global.html#fromDSTemplate">fromDSTemplate</a></li><li><a href="global.html#fromPreviousStep">fromPreviousStep</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#greaterThan">greaterThan</a></li><li><a href="global.html#greaterThanOrEqual">greaterThanOrEqual</a></li><li><a href="global.html#http">http</a></li><li><a href="global.html#httpAPI">httpAPI</a></li><li><a href="global.html#inactive">inactive</a></li><li><a href="global.html#indexOfExpression">indexOfExpression</a></li><li><a href="global.html#inProgress">inProgress</a></li><li><a href="global.html#lastIndexOfExpression">lastIndexOfExpression</a></li><li><a href="global.html#lessThan">lessThan</a></li><li><a href="global.html#lessThanOrEqual">lessThanOrEqual</a></li><li><a href="global.html#notContains">notContains</a></li><li><a href="global.html#notDeployed">notDeployed</a></li><li><a href="global.html#notEndsWith">notEndsWith</a></li><li><a href="global.html#notEqual">notEqual</a></li><li><a href="global.html#notReplicated">notReplicated</a></li><li><a href="global.html#notStartsWith">notStartsWith</a></li><li><a href="global.html#or">or</a></li><li><a href="global.html#parallelExpression">parallelExpression</a></li><li><a href="global.html#participant">participant</a></li><li><a href="global.html#participantEmail">participantEmail</a></li><li><a href="global.html#participantFirstName">participantFirstName</a></li><li><a href="global.html#participantLastName">participantLastName</a></li><li><a href="global.html#pdf">pdf</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#publish">publish</a></li><li><a href="global.html#publishing">publishing</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#replaceExpression">replaceExpression</a></li><li><a href="global.html#resource">resource</a></li><li><a href="global.html#sent">sent</a></li><li><a href="global.html#signed">signed</a></li><li><a href="global.html#startsWith">startsWith</a></li><li><a href="global.html#step">step</a></li><li><a href="global.html#substringExpression">substringExpression</a></li><li><a href="global.html#toLowerExpression">toLowerExpression</a></li><li><a href="global.html#toUpperExpression">toUpperExpression</a></li><li><a href="global.html#unPublish">unPublish</a></li><li><a href="global.html#unpublished">unpublished</a></li><li><a href="global.html#unpublishing">unpublishing</a></li><li><a href="global.html#unpublishInProgress">unpublishInProgress</a></li><li><a href="global.html#unpublishReplicated">unpublishReplicated</a></li><li><a href="global.html#unpublishReplicationFailed">unpublishReplicationFailed</a></li><li><a href="global.html#unpublishReplicationInProgress">unpublishReplicationInProgress</a></li><li><a href="global.html#variable">variable</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">module:ApiClient</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        module:ApiClient
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="module:ApiClient"><span class="type-signature"></span>new module:ApiClient<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line185">line 185</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Manages low level client-server communications, parameter marshalling, etc. There should not be any need for an<br>
+application to use this class directly - the *Api and model classes provide the public API for the service. The<br>
+contents of this file should be regarded as internal but are documented for completeness.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id=".CollectionFormatEnum"><span class="type-signature">(static, readonly) </span>CollectionFormatEnum<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line426">line 426</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>CSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Comma-separated values. Value: <code>csv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>SSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Space-separated values. Value: <code>ssv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>TSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Tab-separated values. Value: <code>tsv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PIPES</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Pipe(|)-separated values. Value: <code>pipes</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>MULTI</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Native array. Value: <code>multi</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    <p>Enumeration of collection format separator strategies.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id=".instance"><span class="type-signature">(static) </span>instance<span class="type-signature"> :<a href="module-ApiClient.html">module:ApiClient</a></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1214">line 1214</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The default API client implementation.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-ApiClient.html">module:ApiClient</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="authentications"><span class="type-signature"></span>authentications<span class="type-signature"> :Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line220">line 220</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The authentication methods to be included for all API calls.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="basePath"><span class="type-signature"></span>basePath<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>https://www.docusign.net/restapi</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The base URL against which to resolve every API call's (relative) path.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="cache"><span class="type-signature"></span>cache<span class="type-signature"> :Boolean</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line237">line 237</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>true</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>If set to false an additional timestamp parameter is added to all API GET calls to<br>
+prevent browser caching</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="oAuthBasePath"><span class="type-signature"></span>oAuthBasePath<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line214">line 214</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>https://www.docusign.net/restapi</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The base URL against which to resolve every authentication API call's (relative) path.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="proxy"><span class="type-signature"></span>proxy<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line200">line 200</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The full URI for the desired proxy.<br>
+A complete list of supported proxies can be found here: https://www.npmjs.com/package/proxy-agent.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="timeout"><span class="type-signature"></span>timeout<span class="type-signature"> :Number</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line229">line 229</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>60000</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The default HTTP timeout for all API calls.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".constructFromObject"><span class="type-signature">(static) </span>constructFromObject<span class="signature">(data, obj)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line831">line 831</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Constructs a new map or array model from REST data.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The REST data.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The target object or array.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".convertToType"><span class="type-signature">(static) </span>convertToType<span class="signature">(data, type)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line775">line 775</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Converts a value to the specified type.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data to convert, as a string or object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+|
+
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type to return. Pass a string for simple types<br>
+or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To<br>
+return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:<br>
+all properties on <code>data<code> will be converted to this type.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An instance of the specified type.</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".parseDate"><span class="type-signature">(static) </span>parseDate<span class="signature">(str)</span><span class="type-signature"> &rarr; {Date}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line762">line 762</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Parses an ISO-8601 string representation of a date value.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The date value as a string.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The parsed date object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Date</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addDefaultHeader"><span class="type-signature"></span>addDefaultHeader<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line274">line 274</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Adds request headers to the API client. Useful for Authentication.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="applyAuthToRequest"><span class="type-signature"></span>applyAuthToRequest<span class="signature">(requestConfig, authNames)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line490">line 490</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Applies authentication headers to the request.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>requestConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The request configuration object used for Axios Request.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of authentication method names.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="buildCollectionParam"><span class="type-signature"></span>buildCollectionParam<span class="signature">(param, collectionFormat)</span><span class="type-signature"> &rarr; {String|Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line461">line 461</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Builds a string representation of an array-type actual parameter, according to the given collection format.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array parameter.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>collectionFormat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-ApiClient.html#.CollectionFormatEnum">module:ApiClient.CollectionFormatEnum</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The array element separator strategy.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A string representation of the supplied collection, using the specified delimiter. Returns<br>
+<code>param</code> as is if <code>collectionFormat</code> is <code>multi</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="buildUrl"><span class="type-signature"></span>buildUrl<span class="signature">(path, pathParams)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line313">line 313</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Builds full URL by appending the given path to the base URL and replacing path parameter place-holders with parameter values.<br>
+NOTE: query parameters are not handled here.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The path to append to the base URL.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pathParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter values to append.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The encoded path with parameter values substituted.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="callApi"><span class="type-signature"></span>callApi<span class="signature">(path, httpMethod, pathParams, queryParams, headerParams, formParams, bodyParam, authNames, contentTypes, accepts, returnType, callback)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line588">line 588</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Invokes the REST service using the supplied settings and parameters.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The base URL to invoke.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpMethod</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The HTTP method to use.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pathParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of path parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of query parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>headerParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of header parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>formParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of form parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bodyParam</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The value to pass as the request body.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of authentication type names.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>contentTypes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of request MIME types.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>accepts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of acceptable response MIME types.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>returnType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">ObjectFunction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The required type to return; can be a string for simple types or the<br>
+constructor for a complex type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-ApiClient.html#~callApiCallback">module:ApiClient~callApiCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function. If this is left undefined, this method will return a promise instead.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The axios request object if a callback is specified, else {Promise} A <a href="https://www.promisejs.org/">Promise</a> object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="configureJWTAuthorizationFlow"><span class="type-signature"></span>configureJWTAuthorizationFlow<span class="signature">(privateKeyFilename, oAuthBasePath, clientId, userId, expiresIn, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1066">line 1066</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>since version 4.1.0
+Configures the current instance of ApiClient with a fresh OAuth JWT access token from DocuSign</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>privateKeyFilename</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the filename of the RSA private key</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>oAuthBasePath</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth base path (account-d.docusign.com for the developer sandbox<br>
+and account.docusign.com for the production platform)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth Client Id (AKA Integrator Key)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign user Id to be impersonated (This is a UUID)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>expiresIn</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>in seconds for the token time-to-live</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the callback function.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deserialize"><span class="type-signature"></span>deserialize<span class="signature">(response, returnType)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line544">line 544</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deserializes an HTTP response body into a value of the specified type.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An Axios response object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>returnType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+|
+
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type to return. Pass a string for simple types<br>
+or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To<br>
+return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:<br>
+all properties on <code>data<code> will be converted to this type.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A value of the specified type.</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="generateAccessToken"><span class="type-signature"></span>generateAccessToken<span class="signature">(clientId, clientSecret, code)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line897">line 897</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID: Identifies the client making the request.<br>
+Client applications may be scoped to a limited set of system access.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clientSecret</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the secret key you generated when you set up the integration in DocuSign Admin console.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The authorization code that you received from the <i>getAuthorizationUri</i> callback.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>OAuthToken object.xx</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAuthorizationUri"><span class="type-signature"></span>getAuthorizationUri<span class="signature">(clientId, scopes, redirectUri, responseType, state)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line858">line 858</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Helper method to configure the OAuth accessCode/implicit flow parameters</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID: Identifies the client making the request.<br>
+Client applications may be scoped to a limited set of system access.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>scopes</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the list of requested scopes.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>redirectUri</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>this determines where to deliver the response containing the authorization code or access token.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>responseType</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>determines the response type of the authorization request.<br>
+<br><i>Note</i>: these response types are mutually exclusive for a client application.<br>
+A public/native client application may only request a response type of &quot;token&quot;;<br>
+a private/trusted client application may only request a response type of &quot;code&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Allows for arbitrary state that may be useful to your application.<br>
+The value in this parameter will be round-tripped along with the response so you can make sure it didn't change.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getBasePath"><span class="type-signature"></span>getBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line243">line 243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the API endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getJWTUri"><span class="type-signature"></span>getJWTUri<span class="signature">(clientId, redirectURI, oAuthBasePath)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1031">line 1031</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Helper method to build the OAuth JWT grant uri (used once to get a user consent for impersonation)</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>redirectURI</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 redirect uri</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>oAuthBasePath</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth base path (account-d.docusign.com for the developer sandbox<br>
+and account.docusign.com for the production platform)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the OAuth JWT grant uri as a String</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOAuthBasePath"><span class="type-signature"></span>getOAuthBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line258">line 258</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the authentication server endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getUserInfo"><span class="type-signature"></span>getUserInfo<span class="signature">(accessToken)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line963">line 963</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accessToken</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the bearer token to use to authenticate for this call.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>OAuth UserInfo model</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isFileParam"><span class="type-signature"></span>isFileParam<span class="signature">(param)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line367">line 367</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Checks whether the given parameter value represents file-like content.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter to check.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p><code>true</code> if <code>param</code> represents a file.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isJsonMime"><span class="type-signature"></span>isJsonMime<span class="signature">(contentType)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line342">line 342</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Checks whether the given content type represents JSON.<br><br>
+JSON content type examples:<br></p>
+<ul>
+<li>application/json</li>
+<li>application/json; charset=UTF8</li>
+<li>APPLICATION/JSON</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>contentType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The MIME content type to check.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p><code>true</code> if <code>contentType</code> represents JSON, otherwise <code>false</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="jsonPreferredMime"><span class="type-signature"></span>jsonPreferredMime<span class="signature">(contentTypes)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line353">line 353</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Chooses a content type from the given array, with JSON preferred; i.e. return JSON if included, otherwise return the first.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>contentTypes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The chosen content type, preferring JSON.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="normalizeParams"><span class="type-signature"></span>normalizeParams<span class="signature">(params)</span><span class="type-signature"> &rarr; {Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line402">line 402</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Normalizes parameter values:</p>
+<ul>
+<li>remove nils</li>
+<li>keep files and arrays</li>
+<li>format to string with `paramToString` for other cases</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameters as object properties.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>normalized parameters.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object:<a href="global.html"></a>.&lt;String:<a href="global.html"></a>, Object:<a href="global.html"></a>></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="paramToString"><span class="type-signature"></span>paramToString<span class="signature">(param)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line296">line 296</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Returns a string representation for an actual parameter.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The actual parameter.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The string representation of <code>param</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setBasePath"><span class="type-signature"></span>setBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line250">line 250</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets the API endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setJWTToken"><span class="type-signature"></span>setJWTToken<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line284">line 284</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets default JWT authorization token for APIs.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setOAuthBasePath"><span class="type-signature"></span>setOAuthBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line265">line 265</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets the authentication server endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+
+    
+
+    <h4 class="name" id="~callApiCallback"><span class="type-signature"></span>callApiCallback<span class="signature">(error, data, response)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line563">line 563</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional)Callback function to receive the result of the <operationId> operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The complete HTTP response.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Aug 22 2024 03:22:55 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

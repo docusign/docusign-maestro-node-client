@@ -1,0 +1,8501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Global - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html"></a></li><li><a href="global.html#_10001">_10001</a></li><li><a href="global.html#_10002">_10002</a></li><li><a href="global.html#_10003">_10003</a></li><li><a href="global.html#_10004">_10004</a></li><li><a href="global.html#_10005">_10005</a></li><li><a href="global.html#_10006">_10006</a></li><li><a href="global.html#_10007">_10007</a></li><li><a href="global.html#_10008">_10008</a></li><li><a href="global.html#_10009">_10009</a></li><li><a href="global.html#_10101">_10101</a></li><li><a href="global.html#_10201">_10201</a></li><li><a href="global.html#_10202">_10202</a></li><li><a href="global.html#_10301">_10301</a></li><li><a href="global.html#_10302">_10302</a></li><li><a href="global.html#_10401">_10401</a></li><li><a href="global.html#_10801">_10801</a></li><li><a href="global.html#_10802">_10802</a></li><li><a href="global.html#_10999">_10999</a></li><li><a href="global.html#_delete">_delete</a></li><li><a href="global.html#active">active</a></li><li><a href="global.html#and">and</a></li><li><a href="global.html#application">application</a></li><li><a href="global.html#archived">archived</a></li><li><a href="global.html#archiving">archiving</a></li><li><a href="global.html#authenticationFailed">authenticationFailed</a></li><li><a href="global.html#bearer">bearer</a></li><li><a href="global.html#booleanExpression">booleanExpression</a></li><li><a href="global.html#canceled">canceled</a></li><li><a href="global.html#comparisonExpression">comparisonExpression</a></li><li><a href="global.html#completed">completed</a></li><li><a href="global.html#concatExpression">concatExpression</a></li><li><a href="global.html#contains">contains</a></li><li><a href="global.html#created">created</a></li><li><a href="global.html#deleted">deleted</a></li><li><a href="global.html#deleteInProgress">deleteInProgress</a></li><li><a href="global.html#deleteReplicated">deleteReplicated</a></li><li><a href="global.html#deleteReplicationFailed">deleteReplicationFailed</a></li><li><a href="global.html#deleteReplicationInProgress">deleteReplicationInProgress</a></li><li><a href="global.html#delivered">delivered</a></li><li><a href="global.html#deliveryFailed">deliveryFailed</a></li><li><a href="global.html#deployed">deployed</a></li><li><a href="global.html#deploymentInProgress">deploymentInProgress</a></li><li><a href="global.html#deployReplicated">deployReplicated</a></li><li><a href="global.html#deployReplicationFailed">deployReplicationFailed</a></li><li><a href="global.html#deployReplicationInProgress">deployReplicationInProgress</a></li><li><a href="global.html#disable">disable</a></li><li><a href="global.html#docx">docx</a></li><li><a href="global.html#DS_IDV">DS_IDV</a></li><li><a href="global.html#dSDocGen">dSDocGen</a></li><li><a href="global.html#dSDoUntil">dSDoUntil</a></li><li><a href="global.html#dSIfElse">dSIfElse</a></li><li><a href="global.html#dSLoop">dSLoop</a></li><li><a href="global.html#dSParallel">dSParallel</a></li><li><a href="global.html#dSSign">dSSign</a></li><li><a href="global.html#dSTransformation">dSTransformation</a></li><li><a href="global.html#dSWebForms">dSWebForms</a></li><li><a href="global.html#endsWith">endsWith</a></li><li><a href="global.html#envelopeCompleted">envelopeCompleted</a></li><li><a href="global.html#envelopeCorrected">envelopeCorrected</a></li><li><a href="global.html#envelopeCreated">envelopeCreated</a></li><li><a href="global.html#envelopeDeclined">envelopeDeclined</a></li><li><a href="global.html#envelopeDeleted">envelopeDeleted</a></li><li><a href="global.html#envelopeDelivered">envelopeDelivered</a></li><li><a href="global.html#envelopeDiscard">envelopeDiscard</a></li><li><a href="global.html#envelopePurge">envelopePurge</a></li><li><a href="global.html#envelopeResent">envelopeResent</a></li><li><a href="global.html#envelopeSent">envelopeSent</a></li><li><a href="global.html#envelopeVoided">envelopeVoided</a></li><li><a href="global.html#equal">equal</a></li><li><a href="global.html#failed">failed</a></li><li><a href="global.html#fromDSTemplate">fromDSTemplate</a></li><li><a href="global.html#fromPreviousStep">fromPreviousStep</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#greaterThan">greaterThan</a></li><li><a href="global.html#greaterThanOrEqual">greaterThanOrEqual</a></li><li><a href="global.html#http">http</a></li><li><a href="global.html#httpAPI">httpAPI</a></li><li><a href="global.html#inactive">inactive</a></li><li><a href="global.html#indexOfExpression">indexOfExpression</a></li><li><a href="global.html#inProgress">inProgress</a></li><li><a href="global.html#lastIndexOfExpression">lastIndexOfExpression</a></li><li><a href="global.html#lessThan">lessThan</a></li><li><a href="global.html#lessThanOrEqual">lessThanOrEqual</a></li><li><a href="global.html#notContains">notContains</a></li><li><a href="global.html#notDeployed">notDeployed</a></li><li><a href="global.html#notEndsWith">notEndsWith</a></li><li><a href="global.html#notEqual">notEqual</a></li><li><a href="global.html#notReplicated">notReplicated</a></li><li><a href="global.html#notStartsWith">notStartsWith</a></li><li><a href="global.html#or">or</a></li><li><a href="global.html#parallelExpression">parallelExpression</a></li><li><a href="global.html#participant">participant</a></li><li><a href="global.html#participantEmail">participantEmail</a></li><li><a href="global.html#participantFirstName">participantFirstName</a></li><li><a href="global.html#participantLastName">participantLastName</a></li><li><a href="global.html#pdf">pdf</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#publish">publish</a></li><li><a href="global.html#publishing">publishing</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#replaceExpression">replaceExpression</a></li><li><a href="global.html#resource">resource</a></li><li><a href="global.html#sent">sent</a></li><li><a href="global.html#signed">signed</a></li><li><a href="global.html#startsWith">startsWith</a></li><li><a href="global.html#step">step</a></li><li><a href="global.html#substringExpression">substringExpression</a></li><li><a href="global.html#toLowerExpression">toLowerExpression</a></li><li><a href="global.html#toUpperExpression">toUpperExpression</a></li><li><a href="global.html#unPublish">unPublish</a></li><li><a href="global.html#unpublished">unpublished</a></li><li><a href="global.html#unpublishing">unpublishing</a></li><li><a href="global.html#unpublishInProgress">unpublishInProgress</a></li><li><a href="global.html#unpublishReplicated">unpublishReplicated</a></li><li><a href="global.html#unpublishReplicationFailed">unpublishReplicationFailed</a></li><li><a href="global.html#unpublishReplicationInProgress">unpublishReplicationInProgress</a></li><li><a href="global.html#variable">variable</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Global</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="_10001"><span class="type-signature">(constant) </span>_10001<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10001</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10001&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10002"><span class="type-signature">(constant) </span>_10002<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10002</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10002&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10003"><span class="type-signature">(constant) </span>_10003<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10003</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10003&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10004"><span class="type-signature">(constant) </span>_10004<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10004</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10004&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10005"><span class="type-signature">(constant) </span>_10005<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10005</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10005&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10006"><span class="type-signature">(constant) </span>_10006<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10006</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10006&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10007"><span class="type-signature">(constant) </span>_10007<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10007</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10007&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10008"><span class="type-signature">(constant) </span>_10008<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10008</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10008&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10009"><span class="type-signature">(constant) </span>_10009<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10009</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10009&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10101"><span class="type-signature">(constant) </span>_10101<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10101</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10101&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10201"><span class="type-signature">(constant) </span>_10201<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line89">line 89</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10201</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10201&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10202"><span class="type-signature">(constant) </span>_10202<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10202</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10202&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10301"><span class="type-signature">(constant) </span>_10301<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10301</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10301&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10302"><span class="type-signature">(constant) </span>_10302<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line104">line 104</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10302</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10302&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10401"><span class="type-signature">(constant) </span>_10401<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line109">line 109</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10401</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10401&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10801"><span class="type-signature">(constant) </span>_10801<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line114">line 114</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10801</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10801&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10802"><span class="type-signature">(constant) </span>_10802<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10802</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10802&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_10999"><span class="type-signature">(constant) </span>_10999<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ErrorCodes.js.html">model/ErrorCodes.js</a>, <a href="model_ErrorCodes.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ERR_10999</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ERR_10999&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_delete"><span class="type-signature">(constant) </span>_delete<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_HttpTypes.js.html">model/HttpTypes.js</a>, <a href="model_HttpTypes.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delete</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delete&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="active"><span class="type-signature">(constant) </span>active<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>active</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;active&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="and"><span class="type-signature">(constant) </span>and<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowLogicalOperatorTypes.js.html">model/DSWorkflowLogicalOperatorTypes.js</a>, <a href="model_DSWorkflowLogicalOperatorTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>And</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;And&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="application"><span class="type-signature">(constant) </span>application<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_AccessTokenTokenTypes.js.html">model/AccessTokenTokenTypes.js</a>, <a href="model_AccessTokenTokenTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Application</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Application&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="archived"><span class="type-signature">(constant) </span>archived<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>archived</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;archived&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="archiving"><span class="type-signature">(constant) </span>archiving<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>archiving</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;archiving&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="authenticationFailed"><span class="type-signature">(constant) </span>authenticationFailed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Authentication Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Authentication Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="bearer"><span class="type-signature">(constant) </span>bearer<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_AccessTokenTokenTypes.js.html">model/AccessTokenTokenTypes.js</a>, <a href="model_AccessTokenTokenTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Bearer</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Bearer&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="booleanExpression"><span class="type-signature">(constant) </span>booleanExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowExpressionTypesBooleanExpression.js.html">model/DSWorkflowExpressionTypesBooleanExpression.js</a>, <a href="model_DSWorkflowExpressionTypesBooleanExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>BooleanExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;BooleanExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="canceled"><span class="type-signature">(constant) </span>canceled<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowInstanceState.js.html">model/WorkflowInstanceState.js</a>, <a href="model_WorkflowInstanceState.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Canceled</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Canceled&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="canceled"><span class="type-signature">(constant) </span>canceled<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowStepHistoryState.js.html">model/WorkflowStepHistoryState.js</a>, <a href="model_WorkflowStepHistoryState.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Canceled</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Canceled&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="comparisonExpression"><span class="type-signature">(constant) </span>comparisonExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowExpressionTypesComparisonExpression.js.html">model/DSWorkflowExpressionTypesComparisonExpression.js</a>, <a href="model_DSWorkflowExpressionTypesComparisonExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ComparisonExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ComparisonExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="completed"><span class="type-signature">(constant) </span>completed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Completed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Completed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="completed"><span class="type-signature">(constant) </span>completed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowInstanceState.js.html">model/WorkflowInstanceState.js</a>, <a href="model_WorkflowInstanceState.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Completed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Completed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="completed"><span class="type-signature">(constant) </span>completed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowStepHistoryState.js.html">model/WorkflowStepHistoryState.js</a>, <a href="model_WorkflowStepHistoryState.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Completed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Completed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="concatExpression"><span class="type-signature">(constant) </span>concatExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesConcatExpression.js.html">model/DSWorkflowTransformationExpressionTypesConcatExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesConcatExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ConcatExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ConcatExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="contains"><span class="type-signature">(constant) </span>contains<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Contains</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Contains&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="created"><span class="type-signature">(constant) </span>created<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowInstanceState.js.html">model/WorkflowInstanceState.js</a>, <a href="model_WorkflowInstanceState.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Created</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Created&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deleted"><span class="type-signature">(constant) </span>deleted<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deleted</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deleted&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deleteInProgress"><span class="type-signature">(constant) </span>deleteInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delete in Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delete in Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deleteReplicated"><span class="type-signature">(constant) </span>deleteReplicated<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delete Replicated</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delete Replicated&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deleteReplicationFailed"><span class="type-signature">(constant) </span>deleteReplicationFailed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delete Replication Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delete Replication Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deleteReplicationInProgress"><span class="type-signature">(constant) </span>deleteReplicationInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delete Replication in Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delete Replication in Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="delivered"><span class="type-signature">(constant) </span>delivered<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line109">line 109</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delivered</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delivered&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deliveryFailed"><span class="type-signature">(constant) </span>deliveryFailed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Delivery Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Delivery Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deployed"><span class="type-signature">(constant) </span>deployed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deployed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deployed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deploymentInProgress"><span class="type-signature">(constant) </span>deploymentInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deployment In Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deployment In Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deployReplicated"><span class="type-signature">(constant) </span>deployReplicated<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deploy Replicated</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deploy Replicated&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deployReplicationFailed"><span class="type-signature">(constant) </span>deployReplicationFailed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deploy Replication Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deploy Replication Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deployReplicationInProgress"><span class="type-signature">(constant) </span>deployReplicationInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Deploy Replication In Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Deploy Replication In Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="disable"><span class="type-signature">(constant) </span>disable<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeployStatus.js.html">model/DeployStatus.js</a>, <a href="model_DeployStatus.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Disable</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Disable&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="docx"><span class="type-signature">(constant) </span>docx<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowDocGenDocOutputFormat.js.html">model/DSWorkflowDocGenDocOutputFormat.js</a>, <a href="model_DSWorkflowDocGenDocOutputFormat.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>docx</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;docx&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="DS_IDV"><span class="type-signature">(constant) </span>DS_IDV<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSIdv.js.html">model/DSWorkflowStepTypesDSIdv.js</a>, <a href="model_DSWorkflowStepTypesDSIdv.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-IDV</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-IDV&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSDocGen"><span class="type-signature">(constant) </span>dSDocGen<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSDocGen.js.html">model/DSWorkflowStepTypesDSDocGen.js</a>, <a href="model_DSWorkflowStepTypesDSDocGen.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-DocGen</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-DocGen&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSDoUntil"><span class="type-signature">(constant) </span>dSDoUntil<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDoUntil.js.html">model/DSWorkflowStepTypesDoUntil.js</a>, <a href="model_DSWorkflowStepTypesDoUntil.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-DoUntil</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-DoUntil&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSIfElse"><span class="type-signature">(constant) </span>dSIfElse<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSIfElse.js.html">model/DSWorkflowStepTypesDSIfElse.js</a>, <a href="model_DSWorkflowStepTypesDSIfElse.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-IfElse</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-IfElse&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSLoop"><span class="type-signature">(constant) </span>dSLoop<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesLoop.js.html">model/DSWorkflowStepTypesLoop.js</a>, <a href="model_DSWorkflowStepTypesLoop.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-Loop</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-Loop&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSParallel"><span class="type-signature">(constant) </span>dSParallel<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesParallel.js.html">model/DSWorkflowStepTypesParallel.js</a>, <a href="model_DSWorkflowStepTypesParallel.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-Parallel</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-Parallel&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSSign"><span class="type-signature">(constant) </span>dSSign<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSSign.js.html">model/DSWorkflowStepTypesDSSign.js</a>, <a href="model_DSWorkflowStepTypesDSSign.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-Sign</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-Sign&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSTransformation"><span class="type-signature">(constant) </span>dSTransformation<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSTransformation.js.html">model/DSWorkflowStepTypesDSTransformation.js</a>, <a href="model_DSWorkflowStepTypesDSTransformation.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-Transformation</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-Transformation&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dSWebForms"><span class="type-signature">(constant) </span>dSWebForms<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowStepTypesDSWebForms.js.html">model/DSWorkflowStepTypesDSWebForms.js</a>, <a href="model_DSWorkflowStepTypesDSWebForms.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>DS-WebForms</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;DS-WebForms&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="endsWith"><span class="type-signature">(constant) </span>endsWith<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line89">line 89</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>EndsWith</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;EndsWith&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeCompleted"><span class="type-signature">(constant) </span>envelopeCompleted<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-completed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-completed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeCorrected"><span class="type-signature">(constant) </span>envelopeCorrected<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-corrected</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-corrected&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeCreated"><span class="type-signature">(constant) </span>envelopeCreated<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-created</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-created&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeDeclined"><span class="type-signature">(constant) </span>envelopeDeclined<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-declined</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-declined&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeDeleted"><span class="type-signature">(constant) </span>envelopeDeleted<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-deleted</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-deleted&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeDelivered"><span class="type-signature">(constant) </span>envelopeDelivered<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-delivered</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-delivered&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeDiscard"><span class="type-signature">(constant) </span>envelopeDiscard<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line89">line 89</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-discard</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-discard&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopePurge"><span class="type-signature">(constant) </span>envelopePurge<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-purge</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-purge&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeResent"><span class="type-signature">(constant) </span>envelopeResent<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-resent</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-resent&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeSent"><span class="type-signature">(constant) </span>envelopeSent<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-sent</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-sent&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="envelopeVoided"><span class="type-signature">(constant) </span>envelopeVoided<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>envelope-voided</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;envelope-voided&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="equal"><span class="type-signature">(constant) </span>equal<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Equal</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Equal&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="failed"><span class="type-signature">(constant) </span>failed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="failed"><span class="type-signature">(constant) </span>failed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowInstanceState.js.html">model/WorkflowInstanceState.js</a>, <a href="model_WorkflowInstanceState.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="failed"><span class="type-signature">(constant) </span>failed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowStepHistoryState.js.html">model/WorkflowStepHistoryState.js</a>, <a href="model_WorkflowStepHistoryState.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="fromDSTemplate"><span class="type-signature">(constant) </span>fromDSTemplate<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ESignDocumentTypesFromDSTemplate.js.html">model/ESignDocumentTypesFromDSTemplate.js</a>, <a href="model_ESignDocumentTypesFromDSTemplate.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>FromDSTemplate</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;FromDSTemplate&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="fromPreviousStep"><span class="type-signature">(constant) </span>fromPreviousStep<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ESignDocumentTypesFromPreviousStep.js.html">model/ESignDocumentTypesFromPreviousStep.js</a>, <a href="model_ESignDocumentTypesFromPreviousStep.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>FromPreviousStep</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;FromPreviousStep&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="get"><span class="type-signature">(constant) </span>get<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_HttpTypes.js.html">model/HttpTypes.js</a>, <a href="model_HttpTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Get</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Get&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="greaterThan"><span class="type-signature">(constant) </span>greaterThan<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>GreaterThan</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;GreaterThan&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="greaterThanOrEqual"><span class="type-signature">(constant) </span>greaterThanOrEqual<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>GreaterThanOrEqual</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;GreaterThanOrEqual&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="http"><span class="type-signature">(constant) </span>http<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTriggerTypes.js.html">model/DSWorkflowTriggerTypes.js</a>, <a href="model_DSWorkflowTriggerTypes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Http</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Http&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="httpAPI"><span class="type-signature">(constant) </span>httpAPI<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTriggerTypes.js.html">model/DSWorkflowTriggerTypes.js</a>, <a href="model_DSWorkflowTriggerTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Http-API</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Http-API&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="inactive"><span class="type-signature">(constant) </span>inactive<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>inactive</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;inactive&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="indexOfExpression"><span class="type-signature">(constant) </span>indexOfExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesIndexOfExpression.js.html">model/DSWorkflowTransformationExpressionTypesIndexOfExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesIndexOfExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>IndexOfExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;IndexOfExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="inProgress"><span class="type-signature">(constant) </span>inProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowInstanceState.js.html">model/WorkflowInstanceState.js</a>, <a href="model_WorkflowInstanceState.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>In Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;In Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="inProgress"><span class="type-signature">(constant) </span>inProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowStepHistoryState.js.html">model/WorkflowStepHistoryState.js</a>, <a href="model_WorkflowStepHistoryState.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>In Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;In Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="lastIndexOfExpression"><span class="type-signature">(constant) </span>lastIndexOfExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesLastIndexOfExpression.js.html">model/DSWorkflowTransformationExpressionTypesLastIndexOfExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesLastIndexOfExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>LastIndexOfExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;LastIndexOfExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="lessThan"><span class="type-signature">(constant) </span>lessThan<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>LessThan</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;LessThan&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="lessThanOrEqual"><span class="type-signature">(constant) </span>lessThanOrEqual<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>LessThanOrEqual</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;LessThanOrEqual&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notContains"><span class="type-signature">(constant) </span>notContains<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>NotContains</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;NotContains&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notDeployed"><span class="type-signature">(constant) </span>notDeployed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Not Deployed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Not Deployed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notEndsWith"><span class="type-signature">(constant) </span>notEndsWith<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>NotEndsWith</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;NotEndsWith&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notEqual"><span class="type-signature">(constant) </span>notEqual<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>NotEqual</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;NotEqual&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notReplicated"><span class="type-signature">(constant) </span>notReplicated<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Not Replicated</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Not Replicated&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notStartsWith"><span class="type-signature">(constant) </span>notStartsWith<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>NotStartsWith</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;NotStartsWith&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="or"><span class="type-signature">(constant) </span>or<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowLogicalOperatorTypes.js.html">model/DSWorkflowLogicalOperatorTypes.js</a>, <a href="model_DSWorkflowLogicalOperatorTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Or</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Or&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="parallelExpression"><span class="type-signature">(constant) </span>parallelExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowExpressionTypesParallelExpression.js.html">model/DSWorkflowExpressionTypesParallelExpression.js</a>, <a href="model_DSWorkflowExpressionTypesParallelExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ParallelExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ParallelExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="participant"><span class="type-signature">(constant) </span>participant<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowVariableSourceTypesParticipant.js.html">model/DSWorkflowVariableSourceTypesParticipant.js</a>, <a href="model_DSWorkflowVariableSourceTypesParticipant.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>participant</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;participant&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="participantEmail"><span class="type-signature">(constant) </span>participantEmail<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ParticipantKeys.js.html">model/ParticipantKeys.js</a>, <a href="model_ParticipantKeys.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>participantEmail</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;participantEmail&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="participantFirstName"><span class="type-signature">(constant) </span>participantFirstName<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ParticipantKeys.js.html">model/ParticipantKeys.js</a>, <a href="model_ParticipantKeys.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>participantFirstName</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;participantFirstName&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="participantLastName"><span class="type-signature">(constant) </span>participantLastName<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ParticipantKeys.js.html">model/ParticipantKeys.js</a>, <a href="model_ParticipantKeys.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>participantLastName</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;participantLastName&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="pdf"><span class="type-signature">(constant) </span>pdf<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowDocGenDocOutputFormat.js.html">model/DSWorkflowDocGenDocOutputFormat.js</a>, <a href="model_DSWorkflowDocGenDocOutputFormat.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>pdf</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;pdf&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="post"><span class="type-signature">(constant) </span>post<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_HttpTypes.js.html">model/HttpTypes.js</a>, <a href="model_HttpTypes.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Post</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Post&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="publish"><span class="type-signature">(constant) </span>publish<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeployStatus.js.html">model/DeployStatus.js</a>, <a href="model_DeployStatus.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Publish</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Publish&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="publishing"><span class="type-signature">(constant) </span>publishing<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>publishing</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;publishing&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="put"><span class="type-signature">(constant) </span>put<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_HttpTypes.js.html">model/HttpTypes.js</a>, <a href="model_HttpTypes.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Put</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Put&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="replaceExpression"><span class="type-signature">(constant) </span>replaceExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesReplaceExpression.js.html">model/DSWorkflowTransformationExpressionTypesReplaceExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesReplaceExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ReplaceExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ReplaceExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="resource"><span class="type-signature">(constant) </span>resource<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_AccessTokenTokenTypes.js.html">model/AccessTokenTokenTypes.js</a>, <a href="model_AccessTokenTokenTypes.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Resource</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Resource&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="sent"><span class="type-signature">(constant) </span>sent<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line104">line 104</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Sent</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Sent&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="signed"><span class="type-signature">(constant) </span>signed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_EventTypes.js.html">model/EventTypes.js</a>, <a href="model_EventTypes.js.html#line114">line 114</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Signed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Signed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="startsWith"><span class="type-signature">(constant) </span>startsWith<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowComparisonOperatorTypes.js.html">model/DSWorkflowComparisonOperatorTypes.js</a>, <a href="model_DSWorkflowComparisonOperatorTypes.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>StartsWith</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;StartsWith&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="step"><span class="type-signature">(constant) </span>step<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowVariableSourceTypesStep.js.html">model/DSWorkflowVariableSourceTypesStep.js</a>, <a href="model_DSWorkflowVariableSourceTypesStep.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>step</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;step&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="substringExpression"><span class="type-signature">(constant) </span>substringExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesSubstringExpression.js.html">model/DSWorkflowTransformationExpressionTypesSubstringExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesSubstringExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>SubstringExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;SubstringExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="toLowerExpression"><span class="type-signature">(constant) </span>toLowerExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesToLowerExpression.js.html">model/DSWorkflowTransformationExpressionTypesToLowerExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesToLowerExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ToLowerExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ToLowerExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="toUpperExpression"><span class="type-signature">(constant) </span>toUpperExpression<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowTransformationExpressionTypesToUpperExpression.js.html">model/DSWorkflowTransformationExpressionTypesToUpperExpression.js</a>, <a href="model_DSWorkflowTransformationExpressionTypesToUpperExpression.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>ToUpperExpression</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;ToUpperExpression&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unPublish"><span class="type-signature">(constant) </span>unPublish<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeployStatus.js.html">model/DeployStatus.js</a>, <a href="model_DeployStatus.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>UnPublish</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;UnPublish&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublished"><span class="type-signature">(constant) </span>unpublished<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Unpublished</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Unpublished&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublishing"><span class="type-signature">(constant) </span>unpublishing<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_WorkflowMetadataStatus.js.html">model/WorkflowMetadataStatus.js</a>, <a href="model_WorkflowMetadataStatus.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>unpublishing</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;unpublishing&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublishInProgress"><span class="type-signature">(constant) </span>unpublishInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DeploymentStatus.js.html">model/DeploymentStatus.js</a>, <a href="model_DeploymentStatus.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Unpublish in Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Unpublish in Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublishReplicated"><span class="type-signature">(constant) </span>unpublishReplicated<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Unpublish Replicated</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Unpublish Replicated&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublishReplicationFailed"><span class="type-signature">(constant) </span>unpublishReplicationFailed<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Unpublish Replication Failed</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Unpublish Replication Failed&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="unpublishReplicationInProgress"><span class="type-signature">(constant) </span>unpublishReplicationInProgress<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_ReplicationStatus.js.html">model/ReplicationStatus.js</a>, <a href="model_ReplicationStatus.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>Unpublish replication in Progress</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;Unpublish replication in Progress&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="variable"><span class="type-signature">(constant) </span>variable<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="model_DSWorkflowVariableSourceTypesVariable.js.html">model/DSWorkflowVariableSourceTypesVariable.js</a>, <a href="model_DSWorkflowVariableSourceTypesVariable.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>variable</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>value: &quot;variable&quot;</p>
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Aug 22 2024 03:22:55 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

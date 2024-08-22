@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ApiClient.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_WorkflowInstanceManagementApi.html">api/WorkflowInstanceManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#cancelWorkflowInstance">cancelWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowHistory">getWorkflowHistory</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstance">getWorkflowInstance</a></li><li data-type='method'><a href="module-api_WorkflowInstanceManagementApi.html#getWorkflowInstances">getWorkflowInstances</a></li></ul></li><li><a href="module-api_WorkflowManagementApi.html">api/WorkflowManagementApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowManagementApi.html#createWorkflowDefinition">createWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#deleteWorkflowDefinition">deleteWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinition">getWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitionConfigInstances">getWorkflowDefinitionConfigInstances</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#getWorkflowDefinitions">getWorkflowDefinitions</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#publishOrUnPublishWorkflowDefinition">publishOrUnPublishWorkflowDefinition</a></li><li data-type='method'><a href="module-api_WorkflowManagementApi.html#updateWorkflowDefinition">updateWorkflowDefinition</a></li></ul></li><li><a href="module-api_WorkflowTriggerApi.html">api/WorkflowTriggerApi</a><ul class='methods'><li data-type='method'><a href="module-api_WorkflowTriggerApi.html#triggerWorkflow">triggerWorkflow</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AccessTokenResponse.html">model/AccessTokenResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AccessTokenResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AccountId.html">model/AccountId</a><ul class='methods'><li data-type='method'><a href="module-model_AccountId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUID.html">model/AowUUID</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUID.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AowUUIDString.html">model/AowUUIDString</a><ul class='methods'><li data-type='method'><a href="module-model_AowUUIDString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CancelResponse.html">model/CancelResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CancelResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html">model/CreateOrUpdateWorkflowDefinitionRequestBody</a><ul class='methods'><li data-type='method'><a href="module-model_CreateOrUpdateWorkflowDefinitionRequestBody.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployRequest.html">model/DeployRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeployRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeployResponse.html">model/DeployResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeployResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStep.html">model/DSDocGenStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDocGenStepInput.html">model/DSDocGenStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSDocGenStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSDoUntilStep.html">model/DSDoUntilStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSDoUntilStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStep.html">model/DSIdvStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIdvStepInput.html">model/DSIdvStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSIdvStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSIfElseStep.html">model/DSIfElseStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSIfElseStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSLoopStep.html">model/DSLoopStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSLoopStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSParallelStep.html">model/DSParallelStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSParallelStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSServiceStep.html">model/DSServiceStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSServiceStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStep.html">model/DSSignStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSSignStepInput.html">model/DSSignStepInput</a><ul class='methods'><li data-type='method'><a href="module-model_DSSignStepInput.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DsStepId.html">model/DsStepId</a><ul class='methods'><li data-type='method'><a href="module-model_DsStepId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSTransformationStep.html">model/DSTransformationStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSTransformationStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStep.html">model/DSWebFormsStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWebFormsStepConfig.html">model/DSWebFormsStepConfig</a><ul class='methods'><li data-type='method'><a href="module-model_DSWebFormsStepConfig.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowBooleanExpression.html">model/DSWorkflowBooleanExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowBooleanExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowComparisonExpression.html">model/DSWorkflowComparisonExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowComparisonExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowConcatExpression.html">model/DSWorkflowConcatExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowConcatExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowIndexOfExpression.html">model/DSWorkflowIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLane.html">model/DSWorkflowLane</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLane.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLanesRecord.html">model/DSWorkflowLanesRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLanesRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowLastIndexOfExpression.html">model/DSWorkflowLastIndexOfExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowLastIndexOfExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParallelExpression.html">model/DSWorkflowParallelExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParallelExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowParticipantRecord.html">model/DSWorkflowParticipantRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowParticipantRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowReplaceExpression.html">model/DSWorkflowReplaceExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowReplaceExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowStep.html">model/DSWorkflowStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowSubstringExpression.html">model/DSWorkflowSubstringExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowSubstringExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToLowerExpression.html">model/DSWorkflowToLowerExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToLowerExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowToUpperExpression.html">model/DSWorkflowToUpperExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowToUpperExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTransformationExpression.html">model/DSWorkflowTransformationExpression</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTransformationExpression.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowTrigger.html">model/DSWorkflowTrigger</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowTrigger.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariable.html">model/DSWorkflowVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromParticipant.html">model/DSWorkflowVariableFromParticipant</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromParticipant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromStep.html">model/DSWorkflowVariableFromStep</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableFromVariable.html">model/DSWorkflowVariableFromVariable</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableFromVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSWorkflowVariableRecord.html">model/DSWorkflowVariableRecord</a><ul class='methods'><li data-type='method'><a href="module-model_DSWorkflowVariableRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorResponse.html">model/ErrorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromESignTemplate.html">model/ESignDocumentFromESignTemplate</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromESignTemplate.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocumentFromPreviousStep.html">model/ESignDocumentFromPreviousStep</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocumentFromPreviousStep.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignDocuments.html">model/ESignDocuments</a><ul class='methods'><li data-type='method'><a href="module-model_ESignDocuments.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignLocalePolicy.html">model/ESignLocalePolicy</a><ul class='methods'><li data-type='method'><a href="module-model_ESignLocalePolicy.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignSigner.html">model/ESignSigner</a><ul class='methods'><li data-type='method'><a href="module-model_ESignSigner.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabs.html">model/ESignTabs</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabs.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ESignTabsRecord.html">model/ESignTabsRecord</a><ul class='methods'><li data-type='method'><a href="module-model_ESignTabsRecord.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstanceResponse.html">model/GetConfigurationInstanceResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstanceResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponse.html">model/GetConfigurationInstancesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html">model/GetConfigurationInstancesResponseConfigInstances</a><ul class='methods'><li data-type='method'><a href="module-model_GetConfigurationInstancesResponseConfigInstances.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_InvalidWorkflowResponse.html">model/InvalidWorkflowResponse</a><ul class='methods'><li data-type='method'><a href="module-model_InvalidWorkflowResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LastDeployedId.html">model/LastDeployedId</a><ul class='methods'><li data-type='method'><a href="module-model_LastDeployedId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html">model/NewOrUpdatedWorkflowDefinitionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewOrUpdatedWorkflowDefinitionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NumberOrVariable.html">model/NumberOrVariable</a><ul class='methods'><li data-type='method'><a href="module-model_NumberOrVariable.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Participant.html">model/Participant</a><ul class='methods'><li data-type='method'><a href="module-model_Participant.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProgressInstance.html">model/ProgressInstance</a><ul class='methods'><li data-type='method'><a href="module-model_ProgressInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringBoolean.html">model/RecordStringBoolean</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringBoolean.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordStringOrVariableOrTransformation.html">model/RecordStringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_RecordStringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecordToNever.html">model/RecordToNever</a><ul class='methods'><li data-type='method'><a href="module-model_RecordToNever.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StartedByInstance.html">model/StartedByInstance</a><ul class='methods'><li data-type='method'><a href="module-model_StartedByInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_StringOrVariableOrTransformation.html">model/StringOrVariableOrTransformation</a><ul class='methods'><li data-type='method'><a href="module-model_StringOrVariableOrTransformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SuccessMessageResponse.html">model/SuccessMessageResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SuccessMessageResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TemplateId.html">model/TemplateId</a><ul class='methods'><li data-type='method'><a href="module-model_TemplateId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerPayload.html">model/TriggerPayload</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerPayload.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_TriggerWorkflowViaPostResponse.html">model/TriggerWorkflowViaPostResponse</a><ul class='methods'><li data-type='method'><a href="module-model_TriggerWorkflowViaPostResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserId.html">model/UserId</a><ul class='methods'><li data-type='method'><a href="module-model_UserId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ValidationErrors.html">model/ValidationErrors</a><ul class='methods'><li data-type='method'><a href="module-model_ValidationErrors.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_VersionString.html">model/VersionString</a><ul class='methods'><li data-type='method'><a href="module-model_VersionString.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowCreatorId.html">model/WorkflowCreatorId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowCreatorId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDateTime.html">model/WorkflowDateTime</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDateTime.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinition.html">model/WorkflowDefinition</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinition.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionList.html">model/WorkflowDefinitionList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionMetadata.html">model/WorkflowDefinitionMetadata</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionMetadata.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDefinitionWithId.html">model/WorkflowDefinitionWithId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDefinitionWithId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowDeleteResponse.html">model/WorkflowDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstance.html">model/WorkflowInstance</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceId.html">model/WorkflowInstanceId</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceId.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstanceMap.html">model/WorkflowInstanceMap</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstanceMap.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowInstancesList.html">model/WorkflowInstancesList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowInstancesList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepError.html">model/WorkflowStepError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepErrorError.html">model/WorkflowStepErrorError</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepErrorError.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistory.html">model/WorkflowStepHistory</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistory.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_WorkflowStepHistoryList.html">model/WorkflowStepHistoryList</a><ul class='methods'><li data-type='method'><a href="module-model_WorkflowStepHistoryList.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html"></a></li><li><a href="global.html#_10001">_10001</a></li><li><a href="global.html#_10002">_10002</a></li><li><a href="global.html#_10003">_10003</a></li><li><a href="global.html#_10004">_10004</a></li><li><a href="global.html#_10005">_10005</a></li><li><a href="global.html#_10006">_10006</a></li><li><a href="global.html#_10007">_10007</a></li><li><a href="global.html#_10008">_10008</a></li><li><a href="global.html#_10009">_10009</a></li><li><a href="global.html#_10101">_10101</a></li><li><a href="global.html#_10201">_10201</a></li><li><a href="global.html#_10202">_10202</a></li><li><a href="global.html#_10301">_10301</a></li><li><a href="global.html#_10302">_10302</a></li><li><a href="global.html#_10401">_10401</a></li><li><a href="global.html#_10801">_10801</a></li><li><a href="global.html#_10802">_10802</a></li><li><a href="global.html#_10999">_10999</a></li><li><a href="global.html#_delete">_delete</a></li><li><a href="global.html#active">active</a></li><li><a href="global.html#and">and</a></li><li><a href="global.html#application">application</a></li><li><a href="global.html#archived">archived</a></li><li><a href="global.html#archiving">archiving</a></li><li><a href="global.html#authenticationFailed">authenticationFailed</a></li><li><a href="global.html#bearer">bearer</a></li><li><a href="global.html#booleanExpression">booleanExpression</a></li><li><a href="global.html#canceled">canceled</a></li><li><a href="global.html#comparisonExpression">comparisonExpression</a></li><li><a href="global.html#completed">completed</a></li><li><a href="global.html#concatExpression">concatExpression</a></li><li><a href="global.html#contains">contains</a></li><li><a href="global.html#created">created</a></li><li><a href="global.html#deleted">deleted</a></li><li><a href="global.html#deleteInProgress">deleteInProgress</a></li><li><a href="global.html#deleteReplicated">deleteReplicated</a></li><li><a href="global.html#deleteReplicationFailed">deleteReplicationFailed</a></li><li><a href="global.html#deleteReplicationInProgress">deleteReplicationInProgress</a></li><li><a href="global.html#delivered">delivered</a></li><li><a href="global.html#deliveryFailed">deliveryFailed</a></li><li><a href="global.html#deployed">deployed</a></li><li><a href="global.html#deploymentInProgress">deploymentInProgress</a></li><li><a href="global.html#deployReplicated">deployReplicated</a></li><li><a href="global.html#deployReplicationFailed">deployReplicationFailed</a></li><li><a href="global.html#deployReplicationInProgress">deployReplicationInProgress</a></li><li><a href="global.html#disable">disable</a></li><li><a href="global.html#docx">docx</a></li><li><a href="global.html#DS_IDV">DS_IDV</a></li><li><a href="global.html#dSDocGen">dSDocGen</a></li><li><a href="global.html#dSDoUntil">dSDoUntil</a></li><li><a href="global.html#dSIfElse">dSIfElse</a></li><li><a href="global.html#dSLoop">dSLoop</a></li><li><a href="global.html#dSParallel">dSParallel</a></li><li><a href="global.html#dSSign">dSSign</a></li><li><a href="global.html#dSTransformation">dSTransformation</a></li><li><a href="global.html#dSWebForms">dSWebForms</a></li><li><a href="global.html#endsWith">endsWith</a></li><li><a href="global.html#envelopeCompleted">envelopeCompleted</a></li><li><a href="global.html#envelopeCorrected">envelopeCorrected</a></li><li><a href="global.html#envelopeCreated">envelopeCreated</a></li><li><a href="global.html#envelopeDeclined">envelopeDeclined</a></li><li><a href="global.html#envelopeDeleted">envelopeDeleted</a></li><li><a href="global.html#envelopeDelivered">envelopeDelivered</a></li><li><a href="global.html#envelopeDiscard">envelopeDiscard</a></li><li><a href="global.html#envelopePurge">envelopePurge</a></li><li><a href="global.html#envelopeResent">envelopeResent</a></li><li><a href="global.html#envelopeSent">envelopeSent</a></li><li><a href="global.html#envelopeVoided">envelopeVoided</a></li><li><a href="global.html#equal">equal</a></li><li><a href="global.html#failed">failed</a></li><li><a href="global.html#fromDSTemplate">fromDSTemplate</a></li><li><a href="global.html#fromPreviousStep">fromPreviousStep</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#greaterThan">greaterThan</a></li><li><a href="global.html#greaterThanOrEqual">greaterThanOrEqual</a></li><li><a href="global.html#http">http</a></li><li><a href="global.html#httpAPI">httpAPI</a></li><li><a href="global.html#inactive">inactive</a></li><li><a href="global.html#indexOfExpression">indexOfExpression</a></li><li><a href="global.html#inProgress">inProgress</a></li><li><a href="global.html#lastIndexOfExpression">lastIndexOfExpression</a></li><li><a href="global.html#lessThan">lessThan</a></li><li><a href="global.html#lessThanOrEqual">lessThanOrEqual</a></li><li><a href="global.html#notContains">notContains</a></li><li><a href="global.html#notDeployed">notDeployed</a></li><li><a href="global.html#notEndsWith">notEndsWith</a></li><li><a href="global.html#notEqual">notEqual</a></li><li><a href="global.html#notReplicated">notReplicated</a></li><li><a href="global.html#notStartsWith">notStartsWith</a></li><li><a href="global.html#or">or</a></li><li><a href="global.html#parallelExpression">parallelExpression</a></li><li><a href="global.html#participant">participant</a></li><li><a href="global.html#participantEmail">participantEmail</a></li><li><a href="global.html#participantFirstName">participantFirstName</a></li><li><a href="global.html#participantLastName">participantLastName</a></li><li><a href="global.html#pdf">pdf</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#publish">publish</a></li><li><a href="global.html#publishing">publishing</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#replaceExpression">replaceExpression</a></li><li><a href="global.html#resource">resource</a></li><li><a href="global.html#sent">sent</a></li><li><a href="global.html#signed">signed</a></li><li><a href="global.html#startsWith">startsWith</a></li><li><a href="global.html#step">step</a></li><li><a href="global.html#substringExpression">substringExpression</a></li><li><a href="global.html#toLowerExpression">toLowerExpression</a></li><li><a href="global.html#toUpperExpression">toUpperExpression</a></li><li><a href="global.html#unPublish">unPublish</a></li><li><a href="global.html#unpublished">unpublished</a></li><li><a href="global.html#unpublishing">unpublishing</a></li><li><a href="global.html#unpublishInProgress">unpublishInProgress</a></li><li><a href="global.html#unpublishReplicated">unpublishReplicated</a></li><li><a href="global.html#unpublishReplicationFailed">unpublishReplicationFailed</a></li><li><a href="global.html#unpublishReplicationInProgress">unpublishReplicationInProgress</a></li><li><a href="global.html#variable">variable</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ApiClient.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Maestro API
+ * Maestro authors and executes experiences that allow non-coders the ability to define Simple Business Process without having to write code and to deploy them seamlessly without having to have development expertise
+ *
+ * OpenAPI spec version: 1.0.0
+ * Contact: devcenter@docusign.com
+ *
+ * NOTE: This class is auto generated. Do not edit the class manually and submit a new issue instead.
+ *
+ */
+(function (root, factory) {
+  if (typeof define === "function" &amp;&amp; define.amd) {
+    // AMD. Register as an anonymous module.
+    define(["axios"], factory);
+    define(["@devhigley/parse-proxy"], factory);
+  } else if (typeof module === "object" &amp;&amp; module.exports) {
+    // CommonJS-like environments that support module.exports, like Node.
+    module.exports = factory(
+      require("axios"),
+      require("@devhigley/parse-proxy")
+    );
+  } else {
+    // Browser globals (root is window)
+    if (!root.Docusign) {
+      root.Docusign = {};
+    }
+    root.Docusign.ApiClient = factory(root.axios, opts);
+  }
+})(this, function (axios, parseProxy, opts) {
+  "use strict";
+
+  var SCOPE_SIGNATURE = "signature";
+  var SCOPE_EXTENDED = "extended";
+  var SCOPE_IMPERSONATION = "impersonation";
+  var SCOPE_MAESTRO = "aow_manage";
+
+  /*
+   * The default HTTP headers to be included for all API calls.
+   * @type {Array.&lt;String>}
+   * @default {}
+   * */
+
+  var defaultHeaders = {
+    "X-DocuSign-SDK": "Node",
+    "Node-Ver": process.version,
+    "User-Agent": `Swagger-Codegen/node/${process.version}`,
+  };
+
+  var removeNulls = function (obj) {
+    var isArray = obj instanceof Array;
+    for (var k in obj) {
+      if (typeof obj[k] === "object") removeNulls(obj[k]);
+      if (isArray &amp;&amp; obj.length === k) removeNulls(obj);
+      if (obj[k] instanceof Array &amp;&amp; obj[k].length === 0) delete obj[k];
+    }
+    return obj;
+  };
+
+  var generateAndSignJWTAssertion = function (
+    clientId,
+    scopes,
+    privateKey,
+    oAuthBasePath,
+    expiresIn,
+    userId
+  ) {
+    if (typeof expiresIn !== "number" || expiresIn &lt; 0)
+      throw new Error("Invalid expires in param detected");
+
+    var MILLESECONDS_PER_SECOND = 1000,
+      JWT_SIGNING_ALGO = "RS256",
+      now = Math.floor(Date.now() / MILLESECONDS_PER_SECOND),
+      later = now + expiresIn,
+      jwt = require("jsonwebtoken"),
+      parsedScopes = Array.isArray(scopes) ? scopes.join(" ") : scopes;
+
+    var jwtPayload = {
+      iss: clientId,
+      aud: oAuthBasePath,
+      iat: now,
+      exp: later,
+      scope: parsedScopes,
+    };
+
+    /** optional parameters  **/
+    if (userId) {
+      jwtPayload.sub = userId;
+    }
+    return jwt.sign(jwtPayload, privateKey, { algorithm: JWT_SIGNING_ALGO });
+  };
+
+  var sendJWTTokenRequest = function (
+    assertion,
+    oAuthBasePath,
+    proxy,
+    callback
+  ) {
+    const requestConfig = {
+      baseURL: `https://${oAuthBasePath}`,
+      method: "post",
+      url: "/oauth/token",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cache-Control": "no-store",
+        Pragma: "no-cache",
+      },
+      timeout: exports.prototype.timeout,
+      data: {
+        assertion: assertion,
+        grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      },
+    };
+
+    if (proxy) {
+      const proxyObj = parseProxy(proxy);
+      requestConfig.proxy = proxyObj[0];
+    }
+
+    const oauthRequest = axios.request(requestConfig);
+
+    if (!callback) {
+      return new Promise(function (resolve, reject) {
+        oauthRequest
+          .then((response) => {
+            const stdResponse = normalizeResponseFormat(response);
+            resolve(stdResponse);
+          })
+          .catch((err) => {
+            const stdErrorResponse = normalizeResponseFormat(err.response);
+            reject(stdErrorResponse);
+          });
+      });
+    } else {
+      oauthRequest
+        .then((response) => {
+          const stdResponse = normalizeResponseFormat(response);
+          callback(null, stdResponse.body, stdResponse);
+        })
+        .catch((err) => {
+          const stdErrorResponse = normalizeResponseFormat(err.response);
+          callback(stdErrorResponse);
+        });
+    }
+  };
+
+  const normalizeResponseFormat = (res) => {
+    if (res) {
+      const { data: body, headers: header, status: statusCode } = res;
+      return {
+        statusCode,
+        header,
+        body,
+      };
+    }
+    return null;
+  };
+
+  var deriveOAuthBasePathFromRestBasePath = function (basePath) {
+    if (basePath == null) {
+      return exports.prototype.OAuth.BasePath.PRODUCTION;
+    }
+    if (basePath.includes("https://stage")) {
+      return exports.prototype.OAuth.BasePath.STAGE;
+    }
+    if (basePath.includes("https://demo")) {
+      return exports.prototype.OAuth.BasePath.DEMO;
+    }
+    if (basePath.includes("https://www.docusign")) {
+      return exports.prototype.OAuth.BasePath.PRODUCTION;
+    }
+    return exports.prototype.OAuth.BasePath.PRODUCTION;
+  };
+
+  /**
+   * @module ApiClient
+   */
+
+  /**
+   * Manages low level client-server communications, parameter marshalling, etc. There should not be any need for an
+   * application to use this class directly - the *Api and model classes provide the public API for the service. The
+   * contents of this file should be regarded as internal but are documented for completeness.
+   * @alias module:ApiClient
+   * @class
+   */
+  var exports = function (opts) {
+    var defaults = {
+      basePath: "https://www.docusign.net/restapi".replace(/\/+$/, ""),
+      oAuthBasePath: require("./OAuth").BasePath.PRODUCTION,
+    };
+
+    opts = Object.assign({}, defaults, opts);
+    opts.oAuthBasePath = deriveOAuthBasePathFromRestBasePath(opts.basePath);
+
+    /**
+     * The full URI for the desired proxy.
+     * A complete list of supported proxies can be found here: https://www.npmjs.com/package/proxy-agent.
+     * @type {String}
+     * @default
+     */
+    this.proxy = opts.proxy;
+
+    /**
+     * The base URL against which to resolve every API call's (relative) path.
+     * @type {String}
+     * @default https://www.docusign.net/restapi
+     */
+    this.basePath = opts.basePath;
+
+    /**
+     * The base URL against which to resolve every authentication API call's (relative) path.
+     * @type {String}
+     * @default https://www.docusign.net/restapi
+     */
+    this.oAuthBasePath = opts.oAuthBasePath;
+
+    /**
+     * The authentication methods to be included for all API calls.
+     * @type {Array.&lt;String>}
+     */
+    this.authentications = {
+      docusignAccessCode: { type: "oauth2" },
+    };
+
+    /**
+     * The default HTTP timeout for all API calls.
+     * @type {Number}
+     * @default 60000
+     */
+    this.timeout = 60000;
+
+    /**
+     * If set to false an additional timestamp parameter is added to all API GET calls to
+     * prevent browser caching
+     * @type {Boolean}
+     * @default true
+     */
+    this.cache = true;
+  };
+
+  /**
+   * Gets the API endpoint base URL.
+   */
+  exports.prototype.getBasePath = function getBasePath() {
+    return this.basePath;
+  };
+
+  /**
+   * Sets the API endpoint base URL.
+   */
+  exports.prototype.setBasePath = function setBasePath(basePath) {
+    this.basePath = basePath;
+    this.oAuthBasePath = deriveOAuthBasePathFromRestBasePath(basePath);
+  };
+
+  /**
+   * Gets the authentication server endpoint base URL.
+   */
+  exports.prototype.getOAuthBasePath = function getOAuthBasePath() {
+    return this.oAuthBasePath;
+  };
+
+  /**
+   * Sets the authentication server endpoint base URL.
+   */
+  exports.prototype.setOAuthBasePath = function setOAuthBasePath(
+    oAuthBasePath
+  ) {
+    this.oAuthBasePath = oAuthBasePath;
+  };
+
+  /**
+   * Adds request headers to the API client. Useful for Authentication.
+   */
+  exports.prototype.addDefaultHeader = function addDefaultHeader(
+    header,
+    value
+  ) {
+    defaultHeaders[header] = value;
+  };
+
+  /**
+   * Sets default JWT authorization token for APIs.
+   */
+  exports.prototype.setJWTToken = function setJWTToken(token) {
+    if(!token){
+      throw new Error("Missing the required parameter 'token' when calling setJWTToken.");
+    }
+    defaultHeaders["Authorization"] = `Bearer ${token}`;
+  };
+
+  /**
+   * Returns a string representation for an actual parameter.
+   * @param param The actual parameter.
+   * @returns {String} The string representation of &lt;code>param&lt;/code>.
+   */
+  exports.prototype.paramToString = function (param) {
+    if (param == undefined || param == null) {
+      return "";
+    }
+    if (param instanceof Date) {
+      return param.toJSON();
+    }
+    return param.toString();
+  };
+
+  /**
+   * Builds full URL by appending the given path to the base URL and replacing path parameter place-holders with parameter values.
+   * NOTE: query parameters are not handled here.
+   * @param {String} path The path to append to the base URL.
+   * @param {Object} pathParams The parameter values to append.
+   * @returns {String} The encoded path with parameter values substituted.
+   */
+  exports.prototype.buildUrl = function (path, pathParams) {
+    if (!path.match(/^\//)) {
+      path = "/" + path;
+    }
+    var url = this.basePath + path;
+    var _this = this;
+    url = url.replace(/\{([\w-]+)\}/g, function (fullMatch, key) {
+      var value;
+      if (pathParams.hasOwnProperty(key)) {
+        value = _this.paramToString(pathParams[key]);
+      } else {
+        value = fullMatch;
+      }
+      return encodeURIComponent(value);
+    });
+    return url;
+  };
+
+  /**
+   * Checks whether the given content type represents JSON.&lt;br>
+   * JSON content type examples:&lt;br>
+   * &lt;ul>
+   * &lt;li>application/json&lt;/li>
+   * &lt;li>application/json; charset=UTF8&lt;/li>
+   * &lt;li>APPLICATION/JSON&lt;/li>
+   * &lt;/ul>
+   * @param {String} contentType The MIME content type to check.
+   * @returns {Boolean} &lt;code>true&lt;/code> if &lt;code>contentType&lt;/code> represents JSON, otherwise &lt;code>false&lt;/code>.
+   */
+  exports.prototype.isJsonMime = function (contentType) {
+    return Boolean(
+      contentType != null &amp;&amp; contentType.match(/^application\/json(;.*)?$/i)
+    );
+  };
+
+  /**
+   * Chooses a content type from the given array, with JSON preferred; i.e. return JSON if included, otherwise return the first.
+   * @param {Array.&lt;String>} contentTypes
+   * @returns {String} The chosen content type, preferring JSON.
+   */
+  exports.prototype.jsonPreferredMime = function (contentTypes) {
+    for (var i = 0; i &lt; contentTypes.length; i++) {
+      if (this.isJsonMime(contentTypes[i])) {
+        return contentTypes[i];
+      }
+    }
+    return contentTypes[0];
+  };
+
+  /**
+   * Checks whether the given parameter value represents file-like content.
+   * @param param The parameter to check.
+   * @returns {Boolean} &lt;code>true&lt;/code> if &lt;code>param&lt;/code> represents a file.
+   */
+  exports.prototype.isFileParam = function (param) {
+    // fs.ReadStream in Node.js (but not in runtime like browserify)
+    if (
+      typeof window === "undefined" &amp;&amp;
+      typeof require === "function" &amp;&amp;
+      require("fs") &amp;&amp;
+      param instanceof require("fs").ReadStream
+    ) {
+      return true;
+    }
+    // Buffer in Node.js
+    if (typeof Buffer === "function" &amp;&amp; param instanceof Buffer) {
+      return true;
+    }
+    // Blob in browser
+    if (typeof Blob === "function" &amp;&amp; param instanceof Blob) {
+      return true;
+    }
+    // File in browser (it seems File object is also instance of Blob, but keep this for safe)
+    if (typeof File === "function" &amp;&amp; param instanceof File) {
+      return true;
+    }
+    return false;
+  };
+
+  /**
+   * Normalizes parameter values:
+   * &lt;ul>
+   * &lt;li>remove nils&lt;/li>
+   * &lt;li>keep files and arrays&lt;/li>
+   * &lt;li>format to string with `paramToString` for other cases&lt;/li>
+   * &lt;/ul>
+   * @param {Object.&lt;String, Object>} params The parameters as object properties.
+   * @returns {Object.&lt;String, Object>} normalized parameters.
+   */
+  exports.prototype.normalizeParams = function (params) {
+    var newParams = {};
+    for (var key in params) {
+      if (
+        params.hasOwnProperty(key) &amp;&amp;
+        params[key] != undefined &amp;&amp;
+        params[key] != null
+      ) {
+        var value = params[key];
+        if (this.isFileParam(value) || Array.isArray(value)) {
+          newParams[key] = value;
+        } else {
+          newParams[key] = this.paramToString(value);
+        }
+      }
+    }
+    return newParams;
+  };
+
+  /**
+   * Enumeration of collection format separator strategies.
+   * @enum {String}
+   * @readonly
+   */
+  exports.CollectionFormatEnum = {
+    /**
+     * Comma-separated values. Value: &lt;code>csv&lt;/code>
+     * @const
+     */
+    CSV: ",",
+    /**
+     * Space-separated values. Value: &lt;code>ssv&lt;/code>
+     * @const
+     */
+    SSV: " ",
+    /**
+     * Tab-separated values. Value: &lt;code>tsv&lt;/code>
+     * @const
+     */
+    TSV: "\t",
+    /**
+     * Pipe(|)-separated values. Value: &lt;code>pipes&lt;/code>
+     * @const
+     */
+    PIPES: "|",
+    /**
+     * Native array. Value: &lt;code>multi&lt;/code>
+     * @const
+     */
+    MULTI: "multi",
+  };
+
+  /**
+   * Builds a string representation of an array-type actual parameter, according to the given collection format.
+   * @param {Array} param An array parameter.
+   * @param {module:ApiClient.CollectionFormatEnum} collectionFormat The array element separator strategy.
+   * @returns {String|Array} A string representation of the supplied collection, using the specified delimiter. Returns
+   * &lt;code>param&lt;/code> as is if &lt;code>collectionFormat&lt;/code> is &lt;code>multi&lt;/code>.
+   */
+  exports.prototype.buildCollectionParam = function buildCollectionParam(
+    param,
+    collectionFormat
+  ) {
+    if (param == null) {
+      return null;
+    }
+    switch (collectionFormat) {
+      case "csv":
+        return param.map(this.paramToString).join(",");
+      case "ssv":
+        return param.map(this.paramToString).join(" ");
+      case "tsv":
+        return param.map(this.paramToString).join("\t");
+      case "pipes":
+        return param.map(this.paramToString).join("|");
+      case "multi":
+        // return the array directly as axios will handle it as expected
+        return param.map(this.paramToString);
+      default:
+        throw new Error("Unknown collection format: " + collectionFormat);
+    }
+  };
+
+  /**
+   * Applies authentication headers to the request.
+   * @param {Object} requestConfig The request configuration object used for Axios Request.
+   * @param {Array.&lt;String>} authNames An array of authentication method names.
+   */
+  exports.prototype.applyAuthToRequest = function (requestConfig, authNames) {
+    var _this = this;
+    authNames.forEach(function (authName) {
+      var auth = _this.authentications[authName];
+      switch (auth.type) {
+        case "basic":
+          if (auth.username || auth.password) {
+            requestConfig.auth = {
+              username: auth.username || "",
+              password: auth.password || "",
+            };
+          }
+          break;
+        case "apiKey":
+          if (auth.apiKey) {
+            var data = {};
+            if (auth.apiKeyPrefix) {
+              data[auth.name] = auth.apiKeyPrefix + " " + auth.apiKey;
+            } else {
+              data[auth.name] = auth.apiKey;
+            }
+            if (auth["in"] === "header") {
+              requestConfig.headers = {
+                ...requestConfig.headers,
+                ...data,
+              };
+            } else {
+              requestConfig.params = { ...requestConfig.params, ...data };
+            }
+          }
+          break;
+        case "oauth2":
+          if (auth.accessToken) {
+            requestConfig.headers = {
+              ...requestConfig.headers,
+              Authorization: "Bearer " + auth.accessToken,
+            };
+          }
+          break;
+        default:
+          throw new Error("Unknown authentication type: " + auth.type);
+      }
+    });
+  };
+
+  /**
+   * Deserializes an HTTP response body into a value of the specified type.
+   * @param {Object} response An Axios response object.
+   * @param {(String|Array.&lt;String>|Object.&lt;String, Object>|Function)} returnType The type to return. Pass a string for simple types
+   * or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To
+   * return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:
+   * all properties on &lt;code>data&lt;code> will be converted to this type.
+   * @returns A value of the specified type.
+   */
+  exports.prototype.deserialize = function deserialize(response, returnType) {
+    if (response == null || returnType == null || response.status == 204) {
+      return null;
+    }
+    // Rely on Axios Response Schema.
+    // See https://axios-http.com/docs/res_schema
+    var data = response.data;
+    return exports.convertToType(data, returnType);
+  };
+
+  exports.prototype.hasBufferFormParam = function (formParams) {
+    if (!formParams) {
+      return false;
+    }
+    return Object.keys(formParams).some(function (key) {
+      return formParams[key] instanceof Buffer;
+    });
+  };
+
+  /**
+   * (Optional)Callback function to receive the result of the &lt;operationId> operation. If none specified a Promise will be returned.
+   * @callback module:ApiClient~callApiCallback
+   * @param {String} error Error message, if any.
+   * @param data The data returned by the service call.
+   * @param {String} response The complete HTTP response.
+   */
+
+  /**
+   * Invokes the REST service using the supplied settings and parameters.
+   * @param {String} path The base URL to invoke.
+   * @param {String} httpMethod The HTTP method to use.
+   * @param {Object.&lt;String, String>} pathParams A map of path parameters and their values.
+   * @param {Object.&lt;String, Object>} queryParams A map of query parameters and their values.
+   * @param {Object.&lt;String, Object>} headerParams A map of header parameters and their values.
+   * @param {Object.&lt;String, Object>} formParams A map of form parameters and their values.
+   * @param {Object} bodyParam The value to pass as the request body.
+   * @param {Array.&lt;String>} authNames An array of authentication type names.
+   * @param {Array.&lt;String>} contentTypes An array of request MIME types.
+   * @param {Array.&lt;String>} accepts An array of acceptable response MIME types.
+   * @param {(String|Array|ObjectFunction)} returnType The required type to return; can be a string for simple types or the
+   * constructor for a complex type.
+   * @param {module:ApiClient~callApiCallback} callback The callback function. If this is left undefined, this method will return a promise instead.
+   * @returns {Object} The axios request object if a callback is specified, else {Promise} A {@link https://www.promisejs.org/|Promise} object.
+   */
+  exports.prototype.callApi = function callApi(
+    path,
+    httpMethod,
+    pathParams,
+    queryParams,
+    headerParams,
+    formParams,
+    bodyParam,
+    authNames,
+    contentTypes,
+    accepts,
+    returnType,
+    callback
+  ) {
+    var _this = this;
+    var url = this.buildUrl(path, pathParams);
+
+    const requestConfig = {
+      method: httpMethod,
+      url,
+      timeout: this.timeout,
+      paramsSerializer: {
+        indexes: null,
+      },
+    };
+
+    if (this.proxy) {
+      const proxyObj = parseProxy(this.proxy);
+      requestConfig.proxy = proxyObj[0];
+    }
+
+    var _formParams = this.normalizeParams(formParams);
+    var body =
+      httpMethod.toUpperCase() === "GET" &amp;&amp; !bodyParam
+        ? undefined
+        : bodyParam || {};
+
+    // apply authentications
+    this.applyAuthToRequest(requestConfig, authNames);
+
+    // set query parameters
+    if (httpMethod.toUpperCase() === "GET" &amp;&amp; this.cache === false) {
+      queryParams["_"] = new Date().getTime();
+    }
+    const _queryParams = this.normalizeParams(queryParams);
+    requestConfig.params = { ...requestConfig.params, ..._queryParams };
+
+    // set header parameters
+    const _headerParams = this.normalizeParams(headerParams);
+    requestConfig.headers = {
+      ...requestConfig.headers,
+      ...defaultHeaders,
+      ..._headerParams,
+    };
+
+    // set request timeout
+    requestConfig.timeout = this.timeout;
+
+    var contentType = this.jsonPreferredMime(contentTypes);
+
+    if (contentType) {
+      if (contentType != "multipart/form-data") {
+        requestConfig.headers = {
+          ...requestConfig.headers,
+          "Content-Type": contentType,
+        };
+      }
+    } else if (!requestConfig.headers["Content-Type"]) {
+      requestConfig.headers = {
+        ...requestConfig.headers,
+        "Content-Type": "application/json",
+      };
+    }
+
+    if (contentType === "application/x-www-form-urlencoded") {
+      //automatic serialization happens with axios. ref: https://axios-http.com/docs/urlencoded
+      requestConfig.data = this.normalizeParams(formParams);
+    } else if (contentType == "multipart/form-data") {
+      if (this.hasBufferFormParam(_formParams)) {
+        requestConfig.headers = {
+          ...requestConfig.headers,
+          "Content-Disposition": 'form-data; name="file"; filename="file.xml"',
+          "Content-Type": "application/octet-stream",
+        };
+        var formAttachmentKey = Object.keys(formParams).find(function (key) {
+          return _this.isFileParam(_formParams[key]);
+        });
+        requestConfig.data = removeNulls(formParams[formAttachmentKey]);
+      } else {
+        //automatic serialization for formData is supported in axios as of 0.27.0. ref: https://axios-http.com/docs/multipart
+        requestConfig.headers = {
+          ...requestConfig.headers,
+          "Content-Type": "multipart/form-data",
+        };
+        var _formParams = this.normalizeParams(formParams);
+        requestConfig.data = _formParams;
+      }
+    } else if (body) {
+      requestConfig.data = removeNulls(body);
+    }
+
+    var accept = this.jsonPreferredMime(accepts);
+
+    if (accept) {
+      requestConfig.headers = { ...requestConfig.headers, Accept: accept };
+    }
+
+    if (requestConfig.headers["Accept"] === "application/pdf") {
+      requestConfig.responseType = "stream";
+    }
+
+    const request = axios.request(requestConfig);
+
+    var data = null;
+    if (!callback) {
+      return new Promise(function (resolve, reject) {
+        request
+          .then((response) => {
+            try {
+              let streamData;
+              if (requestConfig.headers["Accept"] === "application/pdf") {
+                response.data.on("data", (chunks) => {
+                  streamData += chunks;
+                });
+                response.data.on("end", () => {
+                  resolve(streamData);
+                });
+              } else {
+                data = _this.deserialize(response, returnType);
+                resolve(data);
+              }
+            } catch (err) {
+              reject(err);
+            }
+          })
+          .catch((err) => {
+            const stdErrResponse = normalizeResponseFormat(err.response);
+            reject(stdErrResponse);
+          });
+      });
+    } else {
+      request
+        .then((response) => {
+          try {
+            let streamData;
+            const stdResponse = normalizeResponseFormat(response);
+            if (requestConfig.headers["Accept"] === "application/pdf") {
+              response.data.on("data", (chunks) => {
+                streamData += chunks;
+              });
+              response.data.on("end", () => {
+                callback(null, streamData, stdResponse);
+              });
+            } else {
+              data = _this.deserialize(response, returnType);
+              callback(null, data, stdResponse);
+            }
+          } catch (err) {
+            callback(err);
+          }
+        })
+        .catch((err) => {
+          const stdErrResponse = normalizeResponseFormat(err.response);
+          callback(stdErrResponse);
+        });
+      return request;
+    }
+  };
+
+  /**
+   * Parses an ISO-8601 string representation of a date value.
+   * @param {String} str The date value as a string.
+   * @returns {Date} The parsed date object.
+   */
+  exports.parseDate = function (str) {
+    return new Date(str.replace(/T/i, " "));
+  };
+
+  /**
+   * Converts a value to the specified type.
+   * @param {(String|Object)} data The data to convert, as a string or object.
+   * @param {(String|Array.&lt;String>|Object.&lt;String, Object>|Function)} type The type to return. Pass a string for simple types
+   * or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To
+   * return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:
+   * all properties on &lt;code>data&lt;code> will be converted to this type.
+   * @returns An instance of the specified type.
+   */
+  exports.convertToType = function (data, type) {
+    switch (type) {
+      case "Boolean":
+        return Boolean(data);
+      case "Integer":
+        return parseInt(data, 10);
+      case "Number":
+        return parseFloat(data);
+      case "String":
+        return String(data);
+      case "Date":
+        return this.parseDate(String(data));
+      default:
+        if (type === Object) {
+          // generic object, return directly
+          return data;
+        } else if (typeof type === "function") {
+          // for model type like: User
+          return type.constructFromObject(data);
+        } else if (Array.isArray(type)) {
+          // for array type like: ['String']
+          var itemType = type[0];
+          return data.map(function (item) {
+            return exports.convertToType(item, itemType);
+          });
+        } else if (typeof type === "object") {
+          // for plain object type like: {'String': 'Integer'}
+          var keyType, valueType;
+          for (var k in type) {
+            if (type.hasOwnProperty(k)) {
+              keyType = k;
+              valueType = type[k];
+              break;
+            }
+          }
+          var result = {};
+          for (var k in data) {
+            if (data.hasOwnProperty(k)) {
+              var key = exports.convertToType(k, keyType);
+              var value = exports.convertToType(data[k], valueType);
+              result[key] = value;
+            }
+          }
+          return result;
+        } else {
+          // for unknown type, return the data directly
+          return data;
+        }
+    }
+  };
+
+  /**
+   * Constructs a new map or array model from REST data.
+   * @param data {Object|Array} The REST data.
+   * @param obj {Object|Array} The target object or array.
+   */
+  exports.constructFromObject = function (data, obj, itemType) {
+    if (Array.isArray(data)) {
+      for (var i = 0; i &lt; data.length; i++) {
+        if (data.hasOwnProperty(i))
+          obj[i] = exports.convertToType(data[i], itemType);
+      }
+    } else {
+      for (var k in data) {
+        if (data.hasOwnProperty(k))
+          obj[k] = exports.convertToType(data[k], itemType);
+      }
+    }
+  };
+
+  /**
+   * Helper method to configure the OAuth accessCode/implicit flow parameters
+   * @param clientId OAuth2 client ID: Identifies the client making the request.
+   * Client applications may be scoped to a limited set of system access.
+   * @param scopes the list of requested scopes.
+   * @param redirectUri this determines where to deliver the response containing the authorization code or access token.
+   * @param responseType determines the response type of the authorization request.
+   * &lt;br>&lt;i>Note&lt;/i>: these response types are mutually exclusive for a client application.
+   * A public/native client application may only request a response type of "token";
+   * a private/trusted client application may only request a response type of "code".
+   * @param state Allows for arbitrary state that may be useful to your application.
+   * The value in this parameter will be round-tripped along with the response so you can make sure it didn't change.
+   */
+  exports.prototype.getAuthorizationUri = function (
+    clientId,
+    scopes,
+    redirectUri,
+    responseType,
+    state
+  ) {
+    if (!clientId) throw new Error("Error clientId is required");
+    if (!scopes) throw new Error("Error scopes is required");
+    if (!scopes) throw new Error("Error scopes is required");
+    if (!this.hasNoInvalidScopes(scopes))
+      throw new Error("Error invalid scope detected");
+    if (!redirectUri) throw new Error("Error redirectUri is required");
+    if (!responseType) throw new Error("Error responseType is required");
+
+    var formattedScopes = scopes.join(encodeURI(" "));
+    return (
+      "https://" +
+      this.getOAuthBasePath() +
+      "/oauth/auth" +
+      "?response_type=" +
+      responseType +
+      "&amp;scope=" +
+      formattedScopes +
+      "&amp;client_id=" +
+      clientId +
+      "&amp;redirect_uri=" +
+      encodeURIComponent(redirectUri) +
+      (state ? "&amp;state=" + encodeURIComponent(state) : "")
+    );
+  };
+
+  /**
+   * @param clientId OAuth2 client ID: Identifies the client making the request.
+   * Client applications may be scoped to a limited set of system access.
+   * @param clientSecret the secret key you generated when you set up the integration in DocuSign Admin console.
+   * @param code The authorization code that you received from the &lt;i>getAuthorizationUri&lt;/i> callback.
+   * @return OAuthToken object.xx
+   */
+  exports.prototype.generateAccessToken = function (
+    clientId,
+    clientSecret,
+    code,
+    callback
+  ) {
+    if (!clientId) throw new Error("Error clientId is required", null);
+    if (!clientSecret) throw new Error("Error clientSecret is required", null);
+    if (!code) throw new Error("Error code is required", null);
+
+    var clientString = clientId + ":" + clientSecret,
+      postData = {
+        grant_type: "authorization_code",
+        code: code,
+      },
+      headers = {
+        Authorization: "Basic " + new Buffer(clientString).toString("base64"),
+        "Cache-Control": "no-store",
+        Pragma: "no-cache",
+      },
+      OAuthToken = require("./OAuth").OAuthToken;
+    const requestConfig = {
+      baseURL: `https://${oAuthBasePath}`,
+      method: "post",
+      url: "/oauth/token",
+      headers: {
+        ...headers,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      data: postData,
+    };
+    const request = axios.request(requestConfig);
+
+    if (!callback) {
+      return new Promise(function (resolve, reject) {
+        request
+          .then((response) => {
+            resolve(OAuthToken.constructFromObject(response.data));
+          })
+          .catch((err) => {
+            const stdErrResponse = normalizeResponseFormat(err.response);
+            reject(stdErrResponse);
+          });
+      });
+    } else {
+      request
+        .then((response) => {
+          let OAuthToken = require("./OAuth").OAuthToken;
+          const stdResponse = normalizeResponseFormat(response);
+          return callback(
+            null,
+            OAuthToken.constructFromObject(response.data),
+            stdResponse
+          );
+        })
+        .catch((err) => {
+          const stdErrorResponse = normalizeResponseFormat(err.response);
+          return callback(stdErrorResponse);
+        });
+    }
+  };
+
+  /**
+   * @param accessToken the bearer token to use to authenticate for this call.
+   * @return OAuth UserInfo model
+   */
+  exports.prototype.getUserInfo = function (accessToken, callback) {
+    if (!accessToken) throw new Error("Error accessToken is required", null);
+
+    var headers = {
+      Authorization: "Bearer " + accessToken,
+      "Cache-Control": "no-store",
+      Pragma: "no-cache",
+    };
+
+    const requestConfig = {
+      baseURL: `https://${this.oAuthBasePath}`,
+      method: "get",
+      url: "/oauth/userinfo",
+      headers: headers,
+    };
+    if (this.proxy) {
+      const proxyObj = parseProxy(this.proxy);
+      requestConfig.proxy = proxyObj[0];
+    }
+
+    const request = axios.request(requestConfig);
+
+    var UserInfo = require("./OAuth").UserInfo;
+
+    if (!callback) {
+      try {
+        return new Promise(function (resolve, reject) {
+          request
+            .then((response) => {
+              try {
+                return resolve(UserInfo.constructFromObject(response.data));
+              } catch (err) {
+                throw err;
+              }
+            })
+            .catch((err) => {
+              const stdErrorResponse = normalizeResponseFormat(err.response);
+              reject(stdErrorResponse);
+            });
+        });
+      } catch (err) {
+        throw err;
+      }
+    } else {
+      request
+        .then((response) => {
+          const stdResponse = normalizeResponseFormat(response);
+          return callback(
+            null,
+            UserInfo.constructFromObject(response.data),
+            stdResponse
+          );
+        })
+        .catch((err) => {
+          const stdErrorResponse = normalizeResponseFormat(err.response);
+          return callback(stdErrorResponse);
+        });
+    }
+  };
+
+  /**
+   * Helper method to build the OAuth JWT grant uri (used once to get a user consent for impersonation)
+   * @param clientId OAuth2 client ID
+   * @param redirectURI OAuth2 redirect uri
+   * @param oAuthBasePath DocuSign OAuth base path (account-d.docusign.com for the developer sandbox
+   * 			  and account.docusign.com for the production platform)
+   * @returns {string} the OAuth JWT grant uri as a String
+   */
+  exports.prototype.getJWTUri = function (
+    clientId,
+    redirectURI,
+    oAuthBasePath
+  ) {
+    return (
+      "https://" +
+      oAuthBasePath +
+      "/oauth/auth" +
+      "?" +
+      "response_type=code&amp;" +
+      "client_id=" +
+      encodeURIComponent(clientId) +
+      "&amp;" +
+      "scope=" +
+      encodeURIComponent(
+        `${SCOPE_SIGNATURE} ${SCOPE_IMPERSONATION} ${SCOPE_MAESTRO}`
+      ) +
+      "&amp;" +
+      "redirect_uri=" +
+      encodeURIComponent(redirectURI)
+    );
+  };
+
+  /**
+   * @deprecated since version 4.1.0
+   * Configures the current instance of ApiClient with a fresh OAuth JWT access token from DocuSign
+   * @param privateKeyFilename the filename of the RSA private key
+   * @param oAuthBasePath DocuSign OAuth base path (account-d.docusign.com for the developer sandbox
+   *   			and account.docusign.com for the production platform)
+   * @param clientId DocuSign OAuth Client Id (AKA Integrator Key)
+   * @param userId DocuSign user Id to be impersonated (This is a UUID)
+   * @param expiresIn in seconds for the token time-to-live
+   * @param callback the callback function.
+   */
+  exports.prototype.configureJWTAuthorizationFlow = function (
+    privateKeyFilename,
+    oAuthBasePath,
+    clientId,
+    userId,
+    expiresIn,
+    callback
+  ) {
+    console.warn(
+      "configureJWTAuthorizationFlow is a deprecated function! Please use requestJWTUserToken()"
+    );
+    var _this = this;
+    var jwt = require("jsonwebtoken"),
+      fs = require("fs"),
+      private_key = fs.readFileSync(privateKeyFilename),
+      now = Math.floor(Date.now() / 1000),
+      later = now + expiresIn;
+
+    var jwt_payload = {
+      iss: clientId,
+      sub: userId,
+      aud: oAuthBasePath,
+      iat: now,
+      exp: later,
+      scope: SCOPE_SIGNATURE,
+    };
+
+    var assertion = jwt.sign(jwt_payload, private_key, { algorithm: "RS256" });
+
+    const requestConfig = {
+      baseURL: `https://${oAuthBasePath}`,
+      method: "post",
+      url: "/oauth/token",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cache-Control": "no-store",
+        Pragma: "no-cache",
+        ...defaultHeaders,
+      },
+      timeout: this.timeout,
+      data: {
+        assertion: assertion,
+        grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      },
+    };
+
+    const request = axios.request(requestConfig);
+    const onSuccess = (response) => {
+      if (callback) {
+        if (response.data &amp;&amp; response.data.access_token) {
+          _this.addDefaultHeader(
+            "Authorization",
+            "Bearer " + response.data.access_token
+          );
+        }
+        const stdResponse = normalizeResponseFormat(response);
+        callback(null, stdResponse.body, stdResponse);
+      }
+    };
+
+    const onFailure = (error) => {
+      if (callback) {
+        const stdErrorResponse = normalizeResponseFormat(error.response);
+        callback(stdErrorResponse);
+      }
+    };
+    request.then(onSuccess, onFailure);
+  };
+
+  exports.prototype.hasNoInvalidScopes = function (scopes) {
+    var validScopes = require("./oauth/Scope");
+
+    return (
+      Array.isArray(scopes) &amp;&amp;
+      scopes.length > 0 &amp;&amp;
+      scopes.every(function (scope) {
+        return Object.keys(validScopes).some(function (key) {
+          return validScopes[key] === scope;
+        });
+      })
+    );
+  };
+
+  exports.prototype.sendJWTTokenRequest = function (assertion, callback) {
+    return sendJWTTokenRequest(
+      assertion,
+      this.oAuthBasePath,
+      this.proxy,
+      callback
+    );
+  };
+
+  exports.prototype.requestJWTUserToken = function (
+    clientId,
+    userId,
+    scopes,
+    rsaPrivateKey,
+    expiresIn,
+    callback
+  ) {
+    var privateKey = rsaPrivateKey,
+      assertion = generateAndSignJWTAssertion(
+        clientId,
+        scopes,
+        privateKey,
+        this.getOAuthBasePath(),
+        expiresIn,
+        userId
+      );
+
+    return sendJWTTokenRequest(
+      assertion,
+      this.oAuthBasePath,
+      this.proxy,
+      callback
+    );
+  };
+
+  exports.prototype.requestJWTApplicationToken = function (
+    clientId,
+    scopes,
+    rsaPrivateKey,
+    expiresIn,
+    callback
+  ) {
+    var privateKey = rsaPrivateKey,
+      assertion = generateAndSignJWTAssertion(
+        clientId,
+        scopes,
+        privateKey,
+        this.getOAuthBasePath(),
+        expiresIn
+      );
+
+    return sendJWTTokenRequest(
+      assertion,
+      this.oAuthBasePath,
+      this.proxy,
+      callback
+    );
+  };
+
+  exports.prototype.OAuth = require("./OAuth");
+  exports.prototype.RestApi = require("./RestApi");
+  /**
+   * The default API client implementation.
+   * @type {module:ApiClient}
+   */
+  exports.instance = new exports(opts);
+
+  return exports;
+});
+
+module.exports.OAuth = require("./OAuth");
+module.exports.RestApi = require("./RestApi");
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Aug 22 2024 03:22:55 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
