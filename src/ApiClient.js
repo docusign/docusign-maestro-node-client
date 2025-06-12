@@ -46,6 +46,12 @@
     "User-Agent": `Swagger-Codegen/node/${process.version}`,
   };
 
+  const showDeprecationWarning = () => { 
+    console.warn(
+      '⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/'
+    );
+  }
+
   var removeNulls = function (obj) {
     var isArray = obj instanceof Array;
     for (var k in obj) {
@@ -116,6 +122,7 @@
       requestConfig.proxy = proxyObj[0];
     }
 
+    showDeprecationWarning();
     const oauthRequest = axios.request(requestConfig);
 
     if (!callback) {
@@ -696,6 +703,7 @@
       requestConfig.responseType = "stream";
     }
 
+    showDeprecationWarning();
     const request = axios.request(requestConfig);
 
     var data = null;
@@ -925,6 +933,8 @@
       },
       data: postData,
     };
+    
+    showDeprecationWarning();
     const request = axios.request(requestConfig);
 
     if (!callback) {
@@ -980,6 +990,7 @@
       requestConfig.proxy = proxyObj[0];
     }
 
+    showDeprecationWarning();
     const request = axios.request(requestConfig);
 
     var UserInfo = require("./OAuth").UserInfo;
@@ -1109,6 +1120,7 @@
       },
     };
 
+    showDeprecationWarning();
     const request = axios.request(requestConfig);
     const onSuccess = (response) => {
       if (callback) {

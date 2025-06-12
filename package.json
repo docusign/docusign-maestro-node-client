@@ -1,7 +1,7 @@
 {
   "name": "docusign-maestro",
-  "version": "1.0.0",
-  "description": "DocuSign Node.js API client.",
+  "version": "2.0.0",
+  "description": "⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/",
   "license": "MIT",
   "main": "src/index.js",
   "author": "DocuSign Developer Center <devcenter@docusign.com>",
