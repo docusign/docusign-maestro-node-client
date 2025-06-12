@@ -1,9 +1,20 @@
+
+## ⚠️ Deprecation Notice
+This SDK is deprecated and no longer actively maintained.
+
+Docusign has launched a new IAM SDK, which includes support for Maestro, Navigator and Connected Fields API families in a single, unified package.
+
+👉 We recommend migrating to the IAM SDK for the latest updates, support, and a streamlined developer experience.
+
+🔗 [Learn more and get started](https://developers.docusign.com/docs/sdks/) 
+
 # The Official DocuSign Maestro Node Client SDK
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
+![Deprecated](https://img.shields.io/badge/status-deprecated-red.svg)
 
 [NPM module](https://www.npmjs.com/package/docusign-maestro) that wraps the <a href="https://www.docusign.com">DocuSign</a> Maestro API
 
